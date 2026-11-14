@@ -1,0 +1,722 @@
+[
+  {
+    "id": "T-01",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Project Charter",
+    "name_ja": "プロジェクト憲章",
+    "type": "計画書・文書",
+    "overview": "プロジェクトの存在を公式に認可し、プロジェクトマネージャー（PM）に組織の資源をプロジェクト活動に充当する権限を付与する文書。プロジェクト・スポンサーが発行する。",
+    "formula": null,
+    "exam_tip": "PMが権限を得る公式な起点。憲章がない状態でプロジェクト作業（特に計画や実行）を進めるのはNG。高レベルの要件・マイルストーン・概算予算・成功基準・PMの氏名と権限が記載される。"
+  },
+  {
+    "id": "T-02",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Business Case",
+    "name_ja": "ビジネスケース",
+    "type": "計画書・文書",
+    "overview": "プロジェクトへの投資がビジネス上の必要性や戦略目標に対して経済的・戦略的に妥当であるかを評価・正当化する文書。NPV、IRR、ROIなどの投資評価が含まれる。",
+    "formula": null,
+    "exam_tip": "プロジェクト開始前のPre-project（事前）文書であり、憲章作成のインプットになる。プロジェクト進行中もビジネスケースの妥当性が崩れたら中止・ピボットを検討する。"
+  },
+  {
+    "id": "T-03",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Benefits Management Plan",
+    "name_ja": "ベネフィット・マネジメント計画書",
+    "type": "計画書・文書",
+    "overview": "プロジェクトの成果物によって生み出されるベネフィット（価値・便益）を、いつ・誰が・どのように測定し実現するかを定義した文書。",
+    "formula": null,
+    "exam_tip": "2026年ECO（Business Environment 26%）で極めて重要。Project Management Plan（プロジェクトマネジメント計画書）が「成果物の作り方」を扱うのに対し、本計画書は「価値の実現と測定（多くは終結後）」を扱う。"
+  },
+  {
+    "id": "T-04",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Stakeholder Register",
+    "name_ja": "ステークホルダー登録簿",
+    "type": "管理簿・ログ",
+    "overview": "特定されたすべてのステークホルダーの識別情報（役職・連絡先）、評価情報（要求事項・期待・影響度）、分類（内部/外部・支援的/抵抗的）を記録する管理簿。",
+    "formula": null,
+    "exam_tip": "新しいステークホルダーが判明したときのPMの最初のアクションは「Stakeholder Register（ステークホルダー登録簿）に記録・更新し、分析すること」。機密情報を含むためアクセス制御に配慮する問題も出る。"
+  },
+  {
+    "id": "T-05",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Stakeholder Engagement Assessment Matrix",
+    "name_ja": "ステークホルダー・エンゲージメント評価マトリクス",
+    "type": "ツール・技法",
+    "overview": "主要ステークホルダーの現在の関与度（C: Current）と目標の関与度（D: Desired）を比較し、ギャップを埋めるアクションを計画するためのマトリクス。5段階（Unaware, Resistant, Neutral, Supportive, Leading）で評価する。",
+    "formula": null,
+    "exam_tip": "全員を「Leading（主導的）」にする必要はない。ステークホルダーの影響力に応じて適切な「Desired（目標）」レベルを設定し、CとDのギャップを埋めることが目的。"
+  },
+  {
+    "id": "T-06",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Power/Interest Grid & Salience Model",
+    "name_ja": "権力・関心グリッド / 顕著性モデル",
+    "type": "ツール・技法",
+    "overview": "ステークホルダーを分析・優先順位付けする手法。権力・関心グリッドは2軸で「密接に管理」「満足させる」「情報提供」「監視」の4象限に分類。顕著性モデルはPower（権力）・Urgency（緊急性）・Legitimacy（正当性）の3要素で分類する。",
+    "formula": null,
+    "exam_tip": "Power（権力）が高くInterest（関心）が高い相手には「Manage Closely（密接に管理）」、Powerが高くInterestが低い相手には「Keep Satisfied（満足させ続ける）」を選択する。"
+  },
+  {
+    "id": "T-07",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "RACI Chart",
+    "name_ja": "RACIチャート（責任分担マトリクス）",
+    "type": "ツール・技法",
+    "overview": "タスクや成果物に対する関係者の役割を明確にする責任分担マトリクス（RAM）の一種。R=Responsible（実行責任者）、A=Accountable（説明責任者・承認者）、C=Consulted（相談先）、I=Informed（報告先）。",
+    "formula": null,
+    "exam_tip": "各タスク（行）に対して「A（Accountable：説明責任者）」は必ず1名のみ設定する（複数人だと責任が曖昧になる）。R（実行責任者）は複数でも可。"
+  },
+  {
+    "id": "T-08",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Team Charter",
+    "name_ja": "チーム憲章",
+    "type": "計画書・文書",
+    "overview": "チームの価値観、行動規範（グラウンドルール）、コミュニケーション規約、意思決定ルール、コンフリクト解決ルールなどをチーム全員で合意して定める文書（Social Contract / 社会的契約とも呼ばれる）。",
+    "formula": null,
+    "exam_tip": "PMが一方的に作って押し付けるのではなく、チーム全員で共創（Co-create）する。チーム内の行動問題や対立が起きたときはTeam Charter（チーム憲章）に立ち返る。"
+  },
+  {
+    "id": "T-09",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Governance Framework",
+    "name_ja": "ガバナンス・フレームワーク",
+    "type": "フレームワーク",
+    "overview": "プロジェクトの意思決定、承認権限、フェーズゲートレビュー、エスカレーション経路、監査・コンプライアンスの枠組みを定義した構造。",
+    "formula": null,
+    "exam_tip": "ガバナンスは「正しいことをしているか（意思決定と監視の枠組み）」、マネジメントは「物事を正しく実行しているか」。PMOのタイプ（Supportive / Controlling / Directive）との関連も問われる。"
+  },
+  {
+    "id": "T-10",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Assumption Log",
+    "name_ja": "前提条件ログ（想定事項ログ）",
+    "type": "管理簿・ログ",
+    "overview": "プロジェクト全体を通じて設定された前提条件（Assumptions：真であると仮定している事項）と制約条件（Constraints：制限事項）を記録・追跡する管理簿。Risk Register（リスク登録簿）が「未発生の不確実な事象」を扱うのに対し、本ログは「現時点で事実・成立すると仮定している事項」を扱い、その前提が崩れた場合にリスクが顕在化する関係にある。",
+    "formula": null,
+    "exam_tip": "立ち上げプロセス（プロジェクト憲章作成時）から作成され、ライフサイクル全体で更新される。前提条件の妥当性を検証し、崩れそうな場合はRisk Register（リスク登録簿）へリスクとして登録する。"
+  },
+  {
+    "id": "T-11",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Work Breakdown Structure (WBS)",
+    "name_ja": "作業分解構成図（WBS）",
+    "type": "計画書・文書",
+    "overview": "プロジェクトチームが目標を達成し成果物を作成するために実行する全スコープを、成果物志向（Deliverable-oriented）で階層的に分解した構造図。最下位レベルをWork Package（ワークパッケージ）と呼ぶ。",
+    "formula": null,
+    "exam_tip": "100%ルール（プロジェクトの全スコープを過不足なく100%網羅する）が鉄則。WBSに載っていない作業はスコープ外。アクティビティ（作業手順）ではなく成果物ベースで分解する。"
+  },
+  {
+    "id": "T-12",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "WBS Dictionary",
+    "name_ja": "WBS辞書",
+    "type": "計画書・文書",
+    "overview": "WBSの各構成要素（ワークパッケージやコントロールアカウント）に関する詳細情報（作業内容、責任者、受入基準、見積もり、前提・制約等）を補足説明する文書。",
+    "formula": null,
+    "exam_tip": "WBSの箱だけでは具体的な作業範囲や完了基準が分からないため、チームメンバーが迷わないようWBS Dictionary（WBS辞書）で確認する。"
+  },
+  {
+    "id": "T-13",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Scope Baseline",
+    "name_ja": "スコープベースライン",
+    "type": "計画書・文書",
+    "overview": "承認されたスコープの基準。①Project Scope Statement（プロジェクト・スコープ記述書）、②WBS、③WBS Dictionary（WBS辞書）の3点セットで構成される（Work PackageとPlanning Packageを含む）。",
+    "formula": null,
+    "exam_tip": "スコープベースラインの変更には必ず公式な変更管理プロセス（統合変更管理）の承認が必要。3つの構成要素を正確に覚えておくこと。"
+  },
+  {
+    "id": "T-14",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Requirement Traceability Matrix (RTM)",
+    "name_ja": "要求事項トレーサビリティマトリクス",
+    "type": "管理簿・ログ",
+    "overview": "個々の要求事項をその発生源（ビジネスニーズ・要求元ステークホルダー）から、設計・WBS・テストケース・最終成果物まで一貫して紐づけ追跡する一覧表。",
+    "formula": null,
+    "exam_tip": "すべての要求がビジネス価値に貢献しているか、テスト漏れがないかを確認するために使用。変更影響分析の際にも影響範囲の特定に役立つ。"
+  },
+  {
+    "id": "T-15",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Product Backlog",
+    "name_ja": "プロダクトバックログ",
+    "type": "管理簿・ログ",
+    "overview": "アジャイル開発において、プロダクトに必要なすべての機能・要件・改善・バグ修正などをビジネス価値と優先順位順に並べた単一のリスト。",
+    "formula": null,
+    "exam_tip": "オーナーシップはProduct Owner（プロダクトオーナー）のみが持つ。新しい要件が来たら勝手に実装せず、まずProduct Backlogに追加してPOが優先順位付けを行う（DEEP特性：Detailed appropriately, Estimated, Emergent, Prioritized）。"
+  },
+  {
+    "id": "T-16",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Sprint Backlog",
+    "name_ja": "スプリントバックログ",
+    "type": "管理簿・ログ",
+    "overview": "スプリント計画（Sprint Planning）で開発チームがProduct Backlogから選択したアイテムと、それらを完成させるためのタスク計画のセット。",
+    "formula": null,
+    "exam_tip": "スプリントバックログの所有者はDevelopment Team（開発チーム）。スプリント期間中にステークホルダーやPOが勝手に割り込み作業を追加することは原則禁止（スプリントゴールの保護）。"
+  },
+  {
+    "id": "T-17",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Definition of Done (DoD)",
+    "name_ja": "完了の定義（DoD）",
+    "type": "計画書・文書",
+    "overview": "プロダクトインクリメントが「出荷可能・完了した」とみなされるために満たすべき、品質・テスト・ドキュメント・コンプライアンス等の共通チェックリスト。",
+    "formula": null,
+    "exam_tip": "個別のストーリーに固有のAcceptance Criteria（受入基準）とは異なり、DoDはすべてのバックログアイテムに適用される共通の品質基準。"
+  },
+  {
+    "id": "T-18",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Definition of Ready (DoR)",
+    "name_ja": "準備完了の定義（DoR）",
+    "type": "計画書・文書",
+    "overview": "プロダクトバックログアイテムが、スプリント計画に取り込める状態（見積もり済み・依存関係解消済み・受入基準明確等）になったことを判断する基準。",
+    "formula": null,
+    "exam_tip": "Backlog Refinement（バックログリファインメント）の目的は、上位アイテムをDoRを満たす状態（INVEST原則：Independent, Negotiable, Valuable, Estimable, Small, Testable）に磨き上げること。"
+  },
+  {
+    "id": "T-19",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Burndown & Burnup Charts",
+    "name_ja": "バーンダウンチャート・バーンアップチャート",
+    "type": "ツール・技法",
+    "overview": "Burndown Chartは残作業量（ストーリーポイント等）の推移を時間軸で示す。Burnup Chartは完了した作業量と総スコープ量の2本の線を示し、スコープ変更（スコープ増減）を可視化できる。",
+    "formula": null,
+    "exam_tip": "スコープの増減（Scope Creep等）をステークホルダーに分かりやすく示したい場合は、Burndownではなく「Burnup Chart（バーンアップチャート）」が最適。"
+  },
+  {
+    "id": "T-20",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Kanban Board & Cumulative Flow Diagram (CFD)",
+    "name_ja": "カンバンボード・累積フロー図（CFD）",
+    "type": "ツール・技法",
+    "overview": "Kanban Boardは作業フローを列（To Do, In Progress, Done等）で可視化しWIP制限（Work In Progress Limit）をかける。CFDは各ステータスの累積件数を面グラフで示し、ボトルネックとリードタイムを可視化する。",
+    "formula": "Little's Law（リトルの法則）:\nLead Time（リードタイム） = WIP（仕掛かり作業数） / Throughput（スループット）",
+    "exam_tip": "CFDで特定の帯の幅が急激に広がっている場合、その工程でボトルネック（滞留）が発生している。改善策はWIP制限を厳しくすること。"
+  },
+  {
+    "id": "T-21",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Critical Path Method (CPM)",
+    "name_ja": "クリティカルパス法（CPM）",
+    "type": "計算式・指標",
+    "overview": "スケジュールネットワーク図上で最長所要期間となる経路（クリティカルパス）を特定し、プロジェクトの最短完了期間と各アクティビティの余裕（Float / Slack）を算出する手法。フォワードパス（Forward Pass）でES/EFを、バックワードパス（Backward Pass）でLS/LFを算出する。",
+    "formula": "• Total Float（トータルフロート） = LS - ES = LF - EF\n• Free Float（フリーフロート） = min(後続アクティビティのES) - 自身のEF\n• 計算ルール:\n  - フォワードパス（合流点）: 最大値（Max）を採用 → ES = max(先行のEF), EF = ES + 期間\n  - バックワードパス（分岐点）: 最小値（Min）を採用 → LF = min(後続のLS), LS = LF - 期間\n• Negative Float（負のフロート / Float < 0）: 要求納期に対してスケジュールが遅延しており、納期遵守のためにスケジュール短縮（Crashing/Fast Tracking等）が必須な状態\n※ ES: Earliest Start, EF: Earliest Finish, LS: Latest Start, LF: Latest Finish",
+    "exam_tip": "クリティカルパスが複数存在する場合、リスクが最も高い。スケジュール短縮はクリティカルパス上の作業に行わないと全体納期は縮まらない。合流点はMax、分岐点はMin、Free Floatは「min(後続のES) - 自身のEF」である点に注意。"
+  },
+  {
+    "id": "T-22",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Resource Leveling vs. Resource Smoothing",
+    "name_ja": "資源平準化と資源平滑化",
+    "type": "ツール・技法",
+    "overview": "資源の過負荷を解消するための2つの資源最適化技法。Levelingは資源制約を優先してスケジュールを変更し、Smoothingはスケジュール納期を守りつつ余裕（Float）の範囲内で負荷を平らにする。",
+    "formula": null,
+    "exam_tip": "Resource Leveling（資源平準化）＝クリティカルパスが延長する可能性あり。Resource Smoothing（資源平滑化）＝フリーフロート/トータルフロート内でのみ調整するためクリティカルパス・納期は変わらない。"
+  },
+  {
+    "id": "T-23",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Crashing vs. Fast Tracking",
+    "name_ja": "クラッシングとファストトラッキング",
+    "type": "ツール・技法",
+    "overview": "スケジュールを短縮（Schedule Compression）する2大技法。Crashingは資源を追加投入して期間を縮める方法。Fast Trackingは本来順次行うアクティビティを並行実施する方法。",
+    "formula": null,
+    "exam_tip": "Crashing＝コスト増加（追加費用が最小の作業から選ぶ）。Fast Tracking＝リワーク（手戻り）と品質リスク増加（依存関係が緩い作業を選ぶ）。いずれもクリティカルパス上の作業に適用する。"
+  },
+  {
+    "id": "T-24",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "EVM Basic Metrics: PV, EV, AC, BAC",
+    "name_ja": "EVM基本指標（PV, EV, AC, BAC）",
+    "type": "計算式・指標",
+    "overview": "Earned Value Management（アーンドバリューマネジメント）の土台となる4つの基本数値。スコープ・スケジュール・コストを統合して客観的に進捗を測る。",
+    "formula": "• PV (Planned Value / 計画価値): 現時点までに完了予定の作業の承認済み予算 (= BAC × 計画進捗率)\n• EV (Earned Value / 出来高): 現時点までに実際に完了した作業の予算価値 (= BAC × 実績進捗率)\n• AC (Actual Cost / 実コスト): 現時点までに作業に実際に費やしたコスト\n• BAC (Budget at Completion / 完成時総予算): プロジェクト全体の承認済みコストベースライン総額",
+    "exam_tip": "計算問題ではまず問題文から「PV・EV・AC・BAC」の4つを正確に抜き出すことが最優先。PVは計画進捗率ベース、EVは常に「完了した作業×当初予算単価（実績進捗率ベース）」である点に注意。"
+  },
+  {
+    "id": "T-25",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "EVM Variances: CV, SV",
+    "name_ja": "EVM差異指標（CV：コスト差異、SV：スケジュール差異）",
+    "type": "計算式・指標",
+    "overview": "基準計画（PV）と実績（EV, AC）の差額を金額ベースで表す指標。どちらも「EVが左辺の先頭」になる。",
+    "formula": "• CV (Cost Variance / コスト差異) = EV - AC\n  判定基準: CV > 0 予算内(良好) / CV = 0 予算通り / CV < 0 予算超過(不良)\n• SV (Schedule Variance / スケジュール差異) = EV - PV\n  判定基準: SV > 0 予定より先行(良好) / SV = 0 予定通り / SV < 0 遅延(不良)",
+    "exam_tip": "「プラスが良い、マイナスが悪い」と覚える。SVは金額単位で表される点に注意（プロジェクト完了時にはEV=PV=BACとなるためSVは必ず0になる）。"
+  },
+  {
+    "id": "T-26",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "EVM Performance Indices: CPI, SPI",
+    "name_ja": "EVM効率指数（CPI：コスト効率指数、SPI：スケジュール効率指数）",
+    "type": "計算式・指標",
+    "overview": "予算1円あたり・計画1円あたりの効率を示す比率。規模の異なるプロジェクト間での比較にも使える。",
+    "formula": "• CPI (Cost Performance Index / コスト効率指数) = EV / AC\n  判定基準: CPI > 1.0 予算内で効率良 / CPI = 1.0 予算通り / CPI < 1.0 予算超過(危険)\n• SPI (Schedule Performance Index / スケジュール効率指数) = EV / PV\n  判定基準: SPI > 1.0 スケジュール先行 / SPI = 1.0 予定通り / SPI < 1.0 遅延(危険)",
+    "exam_tip": "「1.0より大きければ良好、1.0未満は不良」。例えばCPI=0.80は「1円使って0.80円分の価値しか生んでいない（コスト超過）」を意味する。"
+  },
+  {
+    "id": "T-27",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Estimate at Completion (EAC) - 4 Patterns",
+    "name_ja": "完成時総コスト見積もり（EAC：4パターン）",
+    "type": "計算式・指標",
+    "overview": "現在の実績と今後の見通しに基づき、プロジェクト完了時に最終的にいくらかかるかを予測する指標。状況に応じて4つの式を使い分ける。",
+    "formula": "① 現在のCPIが今後も続く場合（最も標準・デフォルト）:\n   EAC = BAC / CPI\n② 今回の差異は一時的であり、今後は当初計画通りの効率(CPI=1)で進む場合:\n   EAC = AC + (BAC - EV)\n③ 当初の見積もりが根本的に誤っており、残作業をゼロから再見積もりする場合:\n   EAC = AC + Bottom-up ETC\n④ コスト(CPI)とスケジュール(SPI)の両方が残作業に影響する場合:\n   EAC = AC + [(BAC - EV) / (CPI × SPI)]",
+    "exam_tip": "問題文のキーワードで式を判別する：「at the current rate / typical variance」→①、「atypical / one-time issue」→②、「original estimate flawed / re-estimate」→③、「both CPI and SPI / meet deadline」→④。"
+  },
+  {
+    "id": "T-28",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Estimate to Complete (ETC) & Variance at Completion (VAC)",
+    "name_ja": "残作業コスト見積もり（ETC）と完成時コスト差異（VAC）",
+    "type": "計算式・指標",
+    "overview": "ETCは現時点から完了までに「あと追加でいくらかかるか」、VACは完了時点で「最終予算(BAC)に対していくら余るか/不足するか」を示す予測指標。",
+    "formula": "• ETC (Estimate to Complete / 残作業コスト見積もり) = EAC - AC\n  ※ 効率が維持される場合: ETC = (BAC - EV) / CPI\n• VAC (Variance at Completion / 完成時コスト差異) = BAC - EAC\n  判定基準: VAC > 0 最終的に予算内で完了見込み / VAC < 0 最終的に予算超過見込み",
+    "exam_tip": "VACの符号に注意（BAC - EAC）。EACがBACより大きければVACはマイナス（予算不足予測）になる。"
+  },
+  {
+    "id": "T-29",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "To-Complete Performance Index (TCPI)",
+    "name_ja": "残作業効率指数（TCPI）",
+    "type": "計算式・指標",
+    "overview": "承認済み予算（BAC）または改訂予測（EAC）を達成するために、残りの作業で達成しなければならない目標CPI（コスト効率）を示す指標。",
+    "formula": "• BAC（当初予算）を達成するためのTCPI:\n  TCPI = (BAC - EV) / (BAC - AC) = 残りの作業価値 / 残りの予算\n• EAC（改訂見込み）を達成するためのTCPI:\n  TCPI = (BAC - EV) / (EAC - AC)\n※ 分母 <= 0 の場合の切替ルール:\n  AC >= BAC となり分母 (BAC - AC) <= 0 となる場合は、当初予算(BAC)の達成は不可能とみなし、承認されたEACベースの式 TCPI = (BAC - EV) / (EAC - AC) に切り替えて評価する。\n判定基準: TCPI > 1.0 挽回が必要（厳しい） / TCPI <= 1.0 達成容易（余裕あり）",
+    "exam_tip": "「TCPI = 1.25」のように1.0を大きく超える場合、これまでの効率より25%も効率を上げないと予算内に収まらないことを意味し、非常に厳しい状況と判断する（CPIと大小の良否が逆転する点に注意！）。また、ACがすでにBACに達している・超えている場合はEACベースの式を使う。"
+  },
+  {
+    "id": "T-30",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Net Present Value (NPV)",
+    "name_ja": "正味現在価値（NPV）",
+    "type": "計算式・指標",
+    "overview": "将来のキャッシュフローを割引率（資本コスト等）で現在価値に割り引き、初期投資額を差し引いた金額。貨幣の時間的価値（Time Value of Money）を考慮した最も信頼性の高い投資評価指標。",
+    "formula": "NPV = Σ [ CF_t / (1 + r)^t ] - 初期投資額 (CF_0)\n※ CF_t: t年目の純キャッシュフロー、r: 割引率、t: 期間\n判定基準: NPV > 0 投資価値あり（大きいほど良い） / NPV < 0 却下",
+    "exam_tip": "複数のプロジェクトから1つ選ぶ問題では、原則として「NPVが最も大きいプロジェクト」を選択する。"
+  },
+  {
+    "id": "T-31",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Internal Rate of Return (IRR)",
+    "name_ja": "内部収益率（IRR）",
+    "type": "計算式・指標",
+    "overview": "プロジェクトのNPV（正味現在価値）がちょうどゼロになる割引率。投資の年間複利利回りに相当する。",
+    "formula": "NPV = 0 となる割引率 r (= IRR)\n判定基準: IRR > ハードルレート（資本コスト） なら採用、IRRが高いほど魅力的",
+    "exam_tip": "NPVとIRRの比較では「NPVが最も優先される（IRRが高くても投資規模が小さいとNPVが小さい場合があるため）」。PMP試験でIRRの複雑な手計算は出ないが概念と大小比較は頻出。"
+  },
+  {
+    "id": "T-32",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Return on Investment (ROI)",
+    "name_ja": "投資収益率（ROI）",
+    "type": "計算式・指標",
+    "overview": "投資額に対してどれだけの純利益（ベネフィットからコストを引いた額）が得られたかをパーセンテージで示す指標。",
+    "formula": "ROI (%) = [ (総便益 - 総コスト) / 総コスト ] × 100\n判定基準: ROI > 0% 利益あり（高いほど良い）",
+    "exam_tip": "分子が「総便益」ではなく「純利益（総便益 - 総コスト）」である点に注意。例えばコスト100万でリターン150万なら、ROI = (150-100)/100 = 50%。"
+  },
+  {
+    "id": "T-33",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Benefit-Cost Ratio (BCR)",
+    "name_ja": "便益費用比率（BCR）",
+    "type": "計算式・指標",
+    "overview": "プロジェクトの総便益（収益）を総コストで割った比率。1円投資して何円のリターンがあるかを示す。",
+    "formula": "BCR = 総便益 (Benefits) / 総コスト (Costs)\n判定基準: BCR > 1.0 便益がコストを上回る（採用） / BCR < 1.0 赤字（却下）",
+    "exam_tip": "BCR = 1.5 は「コスト1に対して便益1.5（ROIでいう50%）」を意味する。コストと便益の比較なので、1.0より大きいものを選ぶ。"
+  },
+  {
+    "id": "T-34",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Payback Period",
+    "name_ja": "投資回収期間",
+    "type": "計算式・指標",
+    "overview": "初期投資額を累積キャッシュインフローで回収するまでにかかる年数・月数。流動性やリスク回避を重視する指標。",
+    "formula": "• 年間CFが一定の場合:\n  Payback Period = 初期投資額 / 年間純キャッシュフロー\n• 年間CFが一定でない場合（累積CF＋端数月按分計算）:\n  回収年数 = 累積CFがマイナスからプラスに転じる直前の年 + (未回収残額 / 翌年の年間CF)\n  ※ 端数月 = (未回収残額 / 翌年の年間CF) × 12ヶ月\n判定基準: 期間が短いほどリスクが低く望ましい",
+    "exam_tip": "貨幣の時間的価値（割引率）と回収期間「後」のキャッシュフローを無視する欠点がある。投資評価の中で最も単純だが優先度はNPVより低い。CFが年ごとに変動する表形式の問題では累積CFを順に足して端数月を按分計算する。"
+  },
+  {
+    "id": "T-35",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Communication Channels Formula",
+    "name_ja": "コミュニケーションチャネル数計算式",
+    "type": "計算式・指標",
+    "overview": "チームまたはステークホルダー間の潜在的な1対1のコミュニケーション経路の総数を算出する式。",
+    "formula": "Channels = N × (N - 1) / 2\n※ N: 関係者（ステークホルダー・チームメンバー）の総数（PM自身も含む）",
+    "exam_tip": "「既存のN人のチームに新たにM人加わったらチャネルはいくつ『増える』か？」という差分を問うひっかけ問題が頻出！変更後のチャネル数から変更前のチャネル数を引くこと。"
+  },
+  {
+    "id": "T-36",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Expected Monetary Value (EMV)",
+    "name_ja": "期待金額価値（EMV）",
+    "type": "計算式・指標",
+    "overview": "リスクの定量的分析やデシジョンツリーで用いる、発生確率と金額的影響額を掛け合わせた期待値。コンティンジェンシー予備の算出にも使われる。",
+    "formula": "EMV = 発生確率 (Probability) × 影響額 (Impact)\n※ 脅威（コスト増）はマイナス、好機（利益増）はプラスで表す\n※ 複数選択肢がある場合は Σ EMV が最大（または損失最小）の案を選ぶ",
+    "exam_tip": "好機はプラス、脅威はマイナスで計算し合計する。例えば「30%で+100万、70%で-20万」なら EMV = 30万 - 14万 = +16万。"
+  },
+  {
+    "id": "T-37",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Three-Point Estimating: Triangular vs. Beta (PERT)",
+    "name_ja": "三点見積もり（三角分布 vs ベータ分布 / PERT）",
+    "type": "計算式・指標",
+    "overview": "不確実性を考慮し、楽観値(O: Optimistic)・最頻値(M: Most Likely)・悲観値(P: Pessimistic)の3点から期待値（期間またはコスト）を算出する手法。",
+    "formula": "• 三角分布（Triangular Distribution / 単純平均）:\n  E = (O + M + P) / 3\n• ベータ分布（Beta Distribution / PERT加重平均）:\n  E = (O + 4M + P) / 6\n※ 指定がない場合、PMPでは通常PERT（ベータ分布）を使用する",
+    "exam_tip": "問題文に「Triangular（三角分布）」と明記されていたら3で割り、「PERT / Beta」または指定なしなら「(O + 4M + P) / 6」を使う。"
+  },
+  {
+    "id": "T-38",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "PERT Standard Deviation & Variance",
+    "name_ja": "PERT標準偏差と分散",
+    "type": "計算式・指標",
+    "overview": "ベータ分布（PERT）における見積もりのばらつき（不確実性の幅）と信頼区間（両側確率・片側確率）を計算する指標。",
+    "formula": "• 標準偏差 (Standard Deviation / σ) = (P - O) / 6\n• 分散 (Variance / σ²) = [ (P - O) / 6 ]²\n• 両側信頼区間（正規分布近似）:\n  E ± 1σ = 68.26% / E ± 2σ = 95.46% / E ± 3σ = 99.73%\n• 片側確率（期日までに完了する確率）:\n  E 以下 = 50% / E + 1σ 以内 = 84.13% / E + 2σ 以内 = 97.72%\n※ 複数タスクの合計標準偏差 = √(Σ 各タスクの分散 σ²)",
+    "exam_tip": "クリティカルパス上の複数タスクの標準偏差を合算するときは、標準偏差(σ)をそのまま足すのではなく「各分散(σ²)を足してから平方根(√)をとる」のが鉄則。「E + 1σ 以内に完了する確率」を問われたら片側確率の84.13%（= 50% + 68.26%/2）を選ぶ。"
+  },
+  {
+    "id": "T-39",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Contract Types & Point of Total Assumption (PTA)",
+    "name_ja": "契約種別（FFP, FPIF, FP-EPA, CPFF, CPIF, CPAF, T&M）と総仮定点（PTA）",
+    "type": "計算式・指標",
+    "overview": "リスク分担とインセンティブに応じた調達契約の種類。FPIF（インセンティブ・フィー付き定額契約）では、売り手が超過コストを100%負担し始める臨界点（PTA）を計算できる。",
+    "formula": "• 定額契約 (Fixed-Price Contracts):\n  - FFP (Firm Fixed Price / 完全定額契約): 売り手リスク最大\n  - FPIF (Fixed Price Incentive Fee / インセンティブ・フィー付き定額契約): 目標達成でインセンティブ\n  - FP-EPA (Fixed Price with Economic Price Adjustment / 経済価格調整付き定額契約): 長期契約のインフレ等に対応\n• 実費償還契約 (Cost-Reimbursable Contracts):\n  - CPFF (Cost Plus Fixed Fee / コスト・プラス・定額フィー契約): 実費＋固定利益\n  - CPIF (Cost Plus Incentive Fee / コスト・プラス・インセンティブ・フィー契約): 実費＋目標連動フィー\n  - CPAF (Cost Plus Award Fee / コスト・プラス・報奨フィー契約): 買い手の主観的評価で報奨（買い手リスク最大）\n• T&M (Time and Materials / タイム・アンド・マテリアル契約): 単価×時間（短期・スコープ不明確向け）\n• PTA (Point of Total Assumption / 総仮定点) ※FPIF用:\n  PTA = [ (Ceiling Price - Target Price) / Buyer's Share Ratio ] + Target Cost\n  ※ Target Price（目標価格） = Target Cost（目標コスト） + Target Fee（目標利益）",
+    "exam_tip": "PTAの分母は「買い手の負担比率（Buyer's Share Ratio）」。例えば「売手:買手 = 20:80」なら0.80で割る。また問題文にTarget CostとTarget Feeのみ与えられた場合は「Target Price = Target Cost + Target Fee」で算出してからPTA式に代入する。"
+  },
+  {
+    "id": "T-40",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Cost of Quality (CoQ)",
+    "name_ja": "品質コスト（CoQ）",
+    "type": "ツール・技法",
+    "overview": "品質を達成するため、および品質不良によって発生するすべてのコスト。適合コスト（予防コスト＋評価コスト）と不適合コスト（内部失敗コスト＋外部失敗コスト）の合計。",
+    "formula": "CoQ = 適合コスト (Prevention + Appraisal) + 不適合コスト (Internal Failure + External Failure)",
+    "exam_tip": "試験頻出の分類：①予防（トレーニング、品質プロセス設計）、②評価（テスト、検査）、③内部失敗（出荷前の手直し、廃棄）、④外部失敗（出荷後のクレーム、リコール、保証対応、信用失墜）。予防への投資が最も安価。"
+  },
+  {
+    "id": "T-41",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Ishikawa / Fishbone Diagram",
+    "name_ja": "特性要因図（イシカワ図 / フィッシュボーン図）",
+    "type": "ツール・技法",
+    "overview": "発生した問題（結果・魚の頭）に対して、考えられる原因（人・機械・方法・材料・測定・環境など）を魚の骨のように分解し、根本原因（Root Cause）を特定する図解手法。",
+    "formula": null,
+    "exam_tip": "「根本原因分析（Root Cause Analysis）」や「なぜなぜ分析（5 Whys）」とセットで問われる。問題の原因が不明なとき、まずFishbone図でチームとブレインストーミングする。"
+  },
+  {
+    "id": "T-42",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Pareto Chart (80/20 Rule)",
+    "name_ja": "パレート図（80対20の法則）",
+    "type": "ツール・技法",
+    "overview": "不具合や問題の原因を発生件数の多い順に棒グラフで並べ、累積比率の折れ線グラフを重ねた図。「80%の問題は20%の主要な原因から生じる」というパレートの法則に基づく。",
+    "formula": null,
+    "exam_tip": "「限られた資源で最大の改善効果を得るために、どの欠陥原因から優先的に対処すべきか？」という問題が出たらPareto Chart（パレート図）を選ぶ。"
+  },
+  {
+    "id": "T-43",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Control Chart (Rule of 7)",
+    "name_ja": "管理図（コントロールチャート / 7の法則）",
+    "type": "ツール・技法",
+    "overview": "プロセスが安定しているか（統計的管理状態にあるか）を時系列で監視するグラフ。平均線（Mean）、上方/下方管理限界線（UCL/LCL：通常±3σ）、顧客要求である仕様限界（USL/LSL）を描く。",
+    "formula": "異常（Out of Control）の判定基準:\n1. データ点がUCLまたはLCLの外に出た場合\n2. Rule of 7（7の法則）: 限界線内であっても、7点連続で平均線の片側（上または下）にある、または7点連続で上昇/下降している場合",
+    "exam_tip": "UCL/LCLはプロセスの実力（±3σ）、USL/LSLは顧客の要求仕様。管理限界線内でもRule of 7に該当したら「異常原因（Assignable Cause）」があるとして調査・是正が必要。"
+  },
+  {
+    "id": "T-44",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Scatter Diagram & Histogram",
+    "name_ja": "散布図とヒストグラム",
+    "type": "ツール・技法",
+    "overview": "Scatter Diagram（散布図）は2つの変数間の相関関係（正の相関・負の相関・無相関）を調べる。Histogram（ヒストグラム）は単一変数の度数分布（データのばらつき形状）を示す棒グラフ。",
+    "formula": null,
+    "exam_tip": "「2つの変数の関係性・相関を見たい」→ Scatter Diagram（散布図）。「データの分布の偏りや頻度を見たい」→ Histogram（ヒストグラム）。"
+  },
+  {
+    "id": "T-45",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Risk Register",
+    "name_ja": "リスク登録簿",
+    "type": "管理簿・ログ",
+    "overview": "特定されたすべての個別リスク、原因、発生確率・影響度、リスクスコア、リスクオーナー、対応戦略・アクション、残存リスク・二次リスクを記録し、ライフサイクル全体で更新する管理簿。",
+    "formula": null,
+    "exam_tip": "新しいリスクを発見したらまずRisk Registerに記録・分析する。リスクが実際に発生（顕在化）した場合は、Risk RegisterからIssue Log（課題ログ）へ移し、対応策を実行する。"
+  },
+  {
+    "id": "T-46",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Risk Breakdown Structure (RBS)",
+    "name_ja": "リスクブレークダウンストラクチャ（RBS）",
+    "type": "計画書・文書",
+    "overview": "潜在的なリスクの発生源（技術・外部・組織・プロジェクト管理・サステナビリティ等）を階層構造で体系化した一覧。リスク特定のチェックリストの土台になる。",
+    "formula": null,
+    "exam_tip": "WBSが「成果物の階層構造」であるのに対し、RBSは「リスクのカテゴリー階層構造」。リスク特定時の漏れ防止に使う。"
+  },
+  {
+    "id": "T-47",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Probability and Impact Matrix",
+    "name_ja": "発生確率・影響度マトリクス",
+    "type": "ツール・技法",
+    "overview": "定性的リスク分析（Qualitative Risk Analysis）において、各リスクの「発生確率」と「影響度」の掛け合わせ（リスクスコア）をグリッド上にマッピングし、対応優先順位（高・中・低）を決定する表。",
+    "formula": "Risk Score = Probability（発生確率スコア） × Impact（影響度スコア）",
+    "exam_tip": "定性的リスク分析＝主観的・相対的な優先順位付け（全リスク対象）。定量的リスク分析＝数値・確率分布によるシミュレーション（主に高優先度リスク対象）。"
+  },
+  {
+    "id": "T-48",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Monte Carlo Simulation",
+    "name_ja": "モンテカルロシミュレーション",
+    "type": "ツール・技法",
+    "overview": "定量的リスク分析（Quantitative Risk Analysis）の代表的手法。各タスクの三点見積もり（確率分布）を用いてコンピュータ上で数千〜数万回の試行を行い、プロジェクト全体の完了日や総コストの達成確率（S字カーブ等）を算出する。",
+    "formula": null,
+    "exam_tip": "「個別のリスクがプロジェクト全体の納期や予算に与える複合的な影響と達成確率（例：80%の確率で完了する日）を知りたい」という問題が出たらMonte Carlo Simulationを選ぶ。"
+  },
+  {
+    "id": "T-49",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Decision Tree Analysis",
+    "name_ja": "デシジョンツリー分析",
+    "type": "ツール・技法",
+    "overview": "不確実な状況下で複数の選択肢（例：自社開発 vs 外注、新技術採用 vs 既存技術）を比較するため、分岐ごとのコスト・確率・EMVを樹形図で計算し、最適な意思決定を行う定量的リスク分析手法。",
+    "formula": "各分岐の期待値 = Σ (分岐確率 × 純便益 [リターン - 投資コスト])",
+    "exam_tip": "計算時は必ず各分岐の「初期投資・追加コスト」を差し引いた純額でEMVを計算し、右から左へ折りたたんで最大期待値の選択肢を選ぶ。"
+  },
+  {
+    "id": "T-50",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Issue Log",
+    "name_ja": "課題ログ",
+    "type": "管理簿・ログ",
+    "overview": "プロジェクト実行中にすでに発生した問題・障害・対立（Issue）について、内容・重要度・責任者（オーナー）・対応策・解決期限・ステータスを記録・追跡する管理簿。",
+    "formula": null,
+    "exam_tip": "Risk（未来の不確実性）とIssue（現在発生済みの問題）の区別は超頻出。すでに起きてしまった問題はRisk Registerではなく「Issue Log（課題ログ）」に記録する。"
+  },
+  {
+    "id": "T-51",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Change Log & Change Request",
+    "name_ja": "変更ログと変更要求",
+    "type": "管理簿・ログ",
+    "overview": "Change Request（変更要求）はベースライン・計画・成果物に対する公式な変更提案書（是正措置・予防措置・欠陥修正・更新）。Change Log（変更ログ）は提出されたすべての変更要求と審査結果（承認/却下/保留）を記録する履歴簿。",
+    "formula": null,
+    "exam_tip": "却下された変更要求も含め、すべての変更要求をChange Log（変更ログ）に記録し、根拠をステークホルダーに伝える。"
+  },
+  {
+    "id": "T-52",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Perform Integrated Change Control & CCB",
+    "name_ja": "統合変更管理と変更管理委員会（CCB）",
+    "type": "ツール・技法",
+    "overview": "すべての変更要求がスコープ・スケジュール・コスト・品質・リスク・価値に与える影響を統合的に評価し、PMまたはCCB（Change Control Board / 変更管理委員会）が承認・却下を判断するプロセスと機関。",
+    "formula": null,
+    "exam_tip": "変更を依頼されたら「①記録 → ②影響分析（全体への影響評価） → ③CCB/権限者へ提出して承認 → ④承認後にベースライン・計画更新と関係者通知 → ⑤実行」の順序を絶対に守る。"
+  },
+  {
+    "id": "T-53",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Procurement Statement of Work (SOW) & Make-or-Buy Analysis",
+    "name_ja": "調達作業範囲記述書（SOW）と内外製分析",
+    "type": "計画書・文書",
+    "overview": "Make-or-Buy Analysisは組織内で作るか外部から購入・外注するかをコスト・戦略・機密・能力面から判断する分析。Procurement SOWは外注する範囲・仕様・品質・納期を売り手向けに明確化する文書。",
+    "formula": null,
+    "exam_tip": "買い手はSOWを作成してRFP（提案依頼書）等に含めてベンダーに提示する。契約後は双方にとって法的な拘束力を持つ基準となる。"
+  },
+  {
+    "id": "T-54",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Lessons Learned Register & Final Report",
+    "name_ja": "教訓登録簿と最終報告書",
+    "type": "管理簿・ログ",
+    "overview": "Lessons Learned Register（教訓登録簿）は成功要因・失敗要因・改善策をプロジェクト期間中ずっと記録する文書。Final Report（最終報告書）はプロジェクトの最終実績（目標達成度・コスト・納期・成果物）を総括する終結文書。",
+    "formula": null,
+    "exam_tip": "教訓は「終結時」にまとめて思い出すのではなく、プロジェクト開始時から継続的に記録し、終結時にLessons Learned Repository（OPA）へアーカイブする。"
+  },
+  {
+    "id": "T-55",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Tuckman Ladder",
+    "name_ja": "タックマンモデル（チーム発達段階）",
+    "type": "フレームワーク",
+    "overview": "チームが成熟していく5つの発達段階：①Forming（形成期：礼儀正しく探り合い）、②Storming（混乱期：対立・衝突）、③Norming（統一期：規範の確立・協働開始）、④Performing（機能期：自律・高パフォーマンス）、⑤Adjourning（散会期：解散・移行）。",
+    "formula": null,
+    "exam_tip": "チームに新メンバーが加入したり主要メンバーが抜けたりすると、チームは「Forming」や「Storming」の段階に一時的に逆戻りすることがあるため、PMの適切な支援が必要。"
+  },
+  {
+    "id": "T-56",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Thomas-Kilmann Conflict Modes (5 Modes)",
+    "name_ja": "トーマス・キルマン・コンフリクトモード（5種）",
+    "type": "フレームワーク",
+    "overview": "コンフリクト解決の5つのアプローチ：①Collaborating / Problem Solving（協働・問題解決：Win-Win）、②Compromising / Reconciling（妥協・調和：Lose-Lose/双方譲歩）、③Smoothing / Accommodating（融和・順応：共通点強調）、④Forcing / Directing（強制・指示：Win-Lose）、⑤Avoiding / Withdrawing（回避・撤退）。",
+    "formula": null,
+    "exam_tip": "原則として最も望ましいのは「Collaborating（協働 / Problem Solving）」で恒久的解決を目指すこと。緊急時・安全危機のみ「Forcing」、冷静になる時間稼ぎには「Avoiding/Smoothing」を使う。"
+  },
+  {
+    "id": "T-57",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Motivation Theories: Herzberg, Maslow, McGregor",
+    "name_ja": "動機付け理論（ハーズバーグ・マズロー・マグレガー）",
+    "type": "フレームワーク",
+    "overview": "• Herzberg（二要因理論）：衛生要因（給与・職場環境：不満を防ぐが動機付けにならない）と動機付け要因（達成感・承認・成長）\n• Maslow（欲求5段階説）：生理→安全→社会的→承認→自己実現\n• McGregor（X理論・Y理論）：X理論（人は怠惰で管理が必要）vs Y理論（人は自律的で成長を望む）。",
+    "formula": null,
+    "exam_tip": "PMPではY理論（自律・信頼）とHerzbergの動機付け要因（権限委譲・成長機会・承認）を重視する。給与を上げても一時的な不満解消（衛生要因）にしかならない。"
+  },
+  {
+    "id": "T-58",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Servant Leadership",
+    "name_ja": "サーバントリーダーシップ",
+    "type": "フレームワーク",
+    "overview": "リーダーがチームの上に立って命令するのではなく、チームに奉仕（Serve）し、障害（Impediments）を取り除き、成長と自己組織化を支援することで最大の成果を引き出すリーダーシップスタイル。",
+    "formula": null,
+    "exam_tip": "アジャイルおよび2026年ECO全体の基本マインドセット。問題文でPMがどう振る舞うべきか迷ったら「チームを管理・監視する」より「障害を取り除き、チームを支援・エンパワーする」選択肢を選ぶ。"
+  },
+  {
+    "id": "T-59",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Emotional Intelligence (EI)",
+    "name_ja": "感情知性（EI / EQ）",
+    "type": "ツール・技法",
+    "overview": "自分自身および他者の感情を認識・理解・制御し、人間関係を円滑に構築する能力。①自己認識（Self-awareness）、②自己管理（Self-regulation）、③動機付け（Motivation）、④共感（Empathy）、⑤社会的スキル（Social skills）の5要素で構成される。",
+    "formula": null,
+    "exam_tip": "ステークホルダーの抵抗やチームの士気低下に直面した際、データや論理だけで押し切るのではなく、まず共感（Empathy）と傾聴（Active Listening）で感情を受け止めることが正解になる。"
+  },
+  {
+    "id": "T-60",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "ADKAR Model",
+    "name_ja": "ADKAR変革モデル",
+    "type": "フレームワーク",
+    "overview": "Prosci社が提唱する個人の組織変革定着モデル。①Awareness（変革の必要性の認識）、②Desire（参加・支援への欲求）、③Knowledge（やり方の知識）、④Ability（実践できる能力）、⑤Reinforcement（定着・維持）の5ステップ。",
+    "formula": null,
+    "exam_tip": "組織変革で社員が新システムを使わないとき、最初に「トレーニング（Knowledge）」を増やすのは間違い。まず「なぜ変えるのか（Awareness/Desire）」の理解と動機付けから着手する。"
+  },
+  {
+    "id": "T-61",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Kotter's 8-Step Change Model",
+    "name_ja": "コッターの変革8段階モデル",
+    "type": "フレームワーク",
+    "overview": "組織全体の大規模変革を成功させる8ステップ：①危機意識を高める → ②変革推進連帯チームを築く → ③ビジョンと戦略を生み出す → ④ビジョンを周知徹底する → ⑤障害を取り除き行動を促す → ⑥短期的成果（Quick Wins）を生む → ⑦さらなる変革を推進する → ⑧新しいアプローチを文化に定着させる。",
+    "formula": null,
+    "exam_tip": "初期段階で「短期的成果（Quick Wins）」を作って見せることで、懐疑的なステークホルダーを味方に引き込み、変革の勢いを維持する点がよく問われる。"
+  },
+  {
+    "id": "T-62",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Stacey Matrix",
+    "name_ja": "ステイシー・マトリクス",
+    "type": "フレームワーク",
+    "overview": "「要件の合意度/明確さ（What）」と「技術・方法の確実性（How）」の2軸から、プロジェクトの複雑性を4領域（Simple, Complicated, Complex, Chaos）に分類し、最適な開発アプローチを選択するモデル。",
+    "formula": null,
+    "exam_tip": "要件も技術も明確（Simple）→予測型（Predictive）。要件や技術に不確実性が高い（Complicated / Complex）→アジャイルまたはハイブリッド（Agile/Hybrid）を選択する。"
+  },
+  {
+    "id": "T-63",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Cynefin Framework",
+    "name_ja": "クネビン・フレームワーク",
+    "type": "フレームワーク",
+    "overview": "意思決定の文脈を5つの領域に分類するフレームワーク：Clear（単純：ベストプラクティス）、Complicated（煩雑：専門家分析）、Complex（複雑：実験・探索とアジャイル）、Chaotic（カオス：まず行動して安定化）、Confused/Disorder（混乱：分解して状況把握）。",
+    "formula": null,
+    "exam_tip": "Complex（複雑）領域では原因と結果が事後にしか分からないため、事前詳細計画（予測型）ではなく「Probe-Sense-Respond（探索→感知→対応）」のアジャイルアプローチをとる。"
+  },
+  {
+    "id": "T-64",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "AI-driven Analytics & Predictive Insights",
+    "name_ja": "AI駆動分析・予測インサイト",
+    "type": "ツール・技法",
+    "overview": "生成AIや機械学習を活用し、過去のプロジェクトデータからスケジュール遅延予測、リスク予兆検知、見積もり支援、議事録・報告書作成の自動化を行う2026年ECOの新規重要領域。",
+    "formula": null,
+    "exam_tip": "2026年ECO頻出トレンド：AIはあくまでPMの意思決定を支援する「ツール」であり、AIの出力（ハルシネーションやデータバイアス、プライバシー・著作権侵害リスク）を検証し最終責任を負うのは「人間（PM）」である。"
+  },
+  {
+    "id": "T-65",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Sustainability & ESG Metrics",
+    "name_ja": "サステナビリティ・ESG指標",
+    "type": "ツール・技法",
+    "overview": "環境（Environment：カーボンフットプリント・省エネ・廃棄物削減）、社会（Social：多様性・公平性・労働安全・地域貢献）、ガバナンス（Governance：倫理・透明性）の観点をプロジェクト計画・品質・リスク・調達に組み込む指標。",
+    "formula": null,
+    "exam_tip": "2026年ECOの重要キーワード。短期的なコスト削減だけでなく、ライフサイクル全体の環境負荷やESGコンプライアンスを優先する判断が求められる。"
+  },
+  {
+    "id": "T-66",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Value Stream Mapping (VSM)",
+    "name_ja": "バリューストリームマッピング（VSM）",
+    "type": "ツール・技法",
+    "overview": "顧客の要求を受け取ってから価値（製品・サービス）を届けるまでの全プロセスを可視化し、付加価値時間（Value-added）と無駄な待ち時間・手戻り（Non-value-added / Waste）を特定してフロー効率を最適化するリーン手法。",
+    "formula": "Process Cycle Efficiency (プロセスサイクル効率) = 付加価値作業時間 (Value-Added Time) / 総リードタイム (Total Lead Time)",
+    "exam_tip": "2026年ECOの「価値ベース・デリバリー（PR-3）」や「継続的改善（BE-8）」と密接に関連。個別の作業スピードを上げるより、工程間の「待ち時間（Waste）」を削る方が全体価値の提供が速くなる。"
+  },
+  {
+    "id": "T-67",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Quality Assurance (QA / Manage Quality) vs. Quality Control (QC / Control Quality)",
+    "name_ja": "品質保証（プロセス） vs 品質管理（成果物）",
+    "type": "ツール・技法",
+    "overview": "Quality Assurance（品質保証 / Manage Quality）は「プロセスが正しく機能しているか（品質監査・標準遵守・予防）」に焦点を当て、Quality Control（品質管理 / Control Quality）は「出来上がった成果物が品質基準を満たしているか（検査・テスト・欠陥検出）」に焦点を当てる。",
+    "formula": null,
+    "exam_tip": "欠陥が繰り返し発生している場合、成果物を検査し直す（QC）だけでなく、プロセス自体に問題がないか品質監査（QA / Manage Quality）を行うのが正解。「QA＝プロセス志向・予防」、「QC＝成果物志向・検査」と区別する。"
+  },
+  {
+    "id": "T-68",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Validate Scope (Validation) vs. Control Quality (Verification)",
+    "name_ja": "スコープの妥当性確認 vs 品質管理",
+    "type": "ツール・技法",
+    "overview": "Control Quality（品質管理 / Verification）はプロジェクトチーム内部で成果物の技術的正確性・品質基準適合を検証するプロセス。Validate Scope（スコープの妥当性確認 / Validation）は顧客・スポンサーが成果物を検査し、公式に受入（Formal Acceptance）を行うプロセス。",
+    "formula": null,
+    "exam_tip": "原則として「Control Quality（品質管理）が先、Validate Scope（スコープの妥当性確認）が後」。品質管理でVerified Deliverables（検証済み成果物）になってから、顧客へ渡してAccepted Deliverables（受入済み成果物）にしてもらう。"
+  },
+  {
+    "id": "T-69",
+    "category": "財務・EVM・投資評価（計算式必須）",
+    "name_en": "Cost Baseline & Reserves (Contingency vs. Management)",
+    "name_ja": "コストベースラインと予備費（コンティンジェンシー予備 vs マネジメント予備）",
+    "type": "計算式・指標",
+    "overview": "プロジェクト予算の階層構造。既知の未知（Known-Unknowns：特定済みリスク）に備えるContingency Reserve（コンティンジェンシー予備）はPM権限で使用できコストベースラインに含まれる。未知の未知（Unknown-Unknowns）に備えるManagement Reserve（マネジメント予備）はスポンサー承認が必要でコストベースラインには含まれない。",
+    "formula": "• Cost Baseline（コストベースライン / 実績測定ベースライン） = Control Accounts（作業パッケージ見積 + アクティビティ・コンティンジェンシー予備） + コントロールアカウント・コンティンジェンシー予備\n• Project Budget（プロジェクト総予算） = Cost Baseline + Management Reserve（マネジメント予備）",
+    "exam_tip": "「特定されたリスクが顕在化した」→ PM権限でContingency Reserveを使用。「スコープ外の予期せぬ法改正・自然災害が起きた」→ スポンサーに申請してManagement Reserveを使用（変更要求でCost Baselineへ移す）。"
+  },
+  {
+    "id": "T-70",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Work Performance Data / Information / Reports (WPD / WPI / WPR)",
+    "name_ja": "作業パフォーマンス・データ／情報／報告書",
+    "type": "計画書・文書",
+    "overview": "プロジェクトの進捗情報が加工・変換されていく3段階の流れ。①WPD（生データ：完了タスク数、実コスト等）→ ②WPI（計画と比較・分析された情報：CPI、SPI、遅延日数等）→ ③WPR（意思決定や周知のために整形された報告書：ステータスレポート、ダッシュボード等）。",
+    "formula": "WPD（生データ収集） → 監視・コントロールプロセスで分析 → WPI（計画対比情報） → プロジェクト作業の監視・コントロールで統合 → WPR（報告書・意思決定資料）",
+    "exam_tip": "各知識エリアの監視・コントロールプロセスは「WPDをインプットに受け取り、WPIをアウトプットする」。そして統合の監視・コントロールプロセスでWPIをまとめてWPRを作成する。"
+  },
+  {
+    "id": "T-71",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Velocity & Release Forecasting",
+    "name_ja": "ベロシティとリリース予測",
+    "type": "計算式・指標",
+    "overview": "アジャイル開発において、チームが1スプリントあたりに完了（DoD達成）できるストーリーポイントの平均値（Velocity）を用いて、残りのバックログをいつ完了できるかを予測する手法。",
+    "formula": "• 残りスプリント数 = 残ストーリーポイント (Remaining Story Points) / 平均ベロシティ (Average Velocity)\n  ※ 端数は切り上げ（例：4.2スプリント → 5スプリント必要）\n• 完了までの期間 = 残りスプリント数 × スプリント長 (Sprint Length)",
+    "exam_tip": "ベロシティはチーム固有の予測指標であり、他チームとの比較や人事評価に使ってはならない。また「部分的に完了したストーリー」はベロシティに含めない（Doneになった分のみカウント）。"
+  },
+  {
+    "id": "T-72",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "EEF vs. OPA (Enterprise Environmental Factors vs. Organizational Process Assets)",
+    "name_ja": "組織体の環境要因 vs 組織のプロセス資産",
+    "type": "フレームワーク",
+    "overview": "プロジェクトの計画・実行に影響を与える2大背景要素。EEF（組織体の環境要因）はプロジェクトチームが直接コントロールできない外部・内部の制約や条件（市場、法規制、組織文化、既存インフラ）。OPA（組織のプロセス資産）は組織が蓄積した再利用可能な資産（標準手順、テンプレート、過去データ、教訓リポジトリ）。",
+    "formula": null,
+    "exam_tip": "見分け方の鉄則：EEFはプロジェクトの結果として「更新されない」（そのまま制約として受け入れる）。OPAはプロジェクトを通じて「更新・蓄積される」（教訓やテンプレートをプロジェクト終了時に組織へ還元する）。"
+  }
+]

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PMP 2026.7 最新ECO 学習メモ &amp; チートシート</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-top">
+      <div>
+        <h1>PMP 2026.7 学習メモ</h1>
+        <p class="subtitle">2026年7月改訂 ECO（全26タスク）＋ ツール・計算式・模擬テスト</p>
+      </div>
+      <div class="progress-pill" id="progressPill" title="学習済みチェック数">0 / 0 済</div>
+    </div>
+
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="日・英キーワード検索（例: EVM, 共通ビジョン, CPI, Issue Log）" autocomplete="off">
+      <button id="clearSearchBtn" class="icon-btn" aria-label="検索クリア" hidden>✕</button>
+    </div>
+
+    <nav class="top-tabs" aria-label="メインナビゲーション">
+      <button class="tab-btn active" data-tab="eco">📘 ECO 26タスク</button>
+      <button class="tab-btn" data-tab="tools">🧰 ツール・管理簿</button>
+      <button class="tab-btn" data-tab="formulas">📐 計算式</button>
+      <button class="tab-btn" data-tab="quiz">📝 模擬テスト</button>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <!-- Domain / Category Filter Bar -->
+    <section id="filterBar" class="filter-bar"></section>
+    <div id="statsBar" class="stats-bar"></div>
+
+    <!-- Content Area -->
+    <section id="contentArea" class="content-area"></section>
+  </main>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="bottom-nav" aria-label="モバイルナビゲーション">
+    <button class="bnav-btn active" data-tab="eco">
+      <span class="bnav-icon">📘</span>
+      <span class="bnav-label">ECO</span>
+    </button>
+    <button class="bnav-btn" data-tab="tools">
+      <span class="bnav-icon">🧰</span>
+      <span class="bnav-label">ツール</span>
+    </button>
+    <button class="bnav-btn" data-tab="formulas">
+      <span class="bnav-icon">📐</span>
+      <span class="bnav-label">計算式</span>
+    </button>
+    <button class="bnav-btn" data-tab="quiz">
+      <span class="bnav-icon">📝</span>
+      <span class="bnav-label">テスト</span>
+    </button>
+  </nav>
+
+  <footer class="app-footer">
+    <p>PMI PMP Exam Content Outline (July 2026) 準拠学習メモ（People 33% / Process 41% / Business Environment 26%）</p>
+    <p>※ 本資料は学習支援用まとめです。最新の公式規定は PMI 公式サイトをご確認ください。</p>
+  </footer>
+
+  <script src="data/eco_tasks.js"></script>
+  <script src="data/tools_outputs.js"></script>
+  <script src="data/mock_test.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

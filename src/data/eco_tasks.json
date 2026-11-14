@@ -1,0 +1,731 @@
+[
+  {
+    "id": "P-1",
+    "domain": "People",
+    "title_en": "Develop a common vision",
+    "title_ja": "共通ビジョンの策定",
+    "summary": "プロジェクトの目的・方向性・期待される価値について、チームおよびステークホルダー間で共通の理解（共通ビジョン）を確立し、維持する。プロジェクト憲章やプロダクトビジョンを通じて全員が同じゴールに向かって協働できる基盤を作る。",
+    "enablers": [
+      "プロジェクトの目的・目標とビジネス戦略との整合性を明確化する（Align with Business Strategy / ビジネス戦略との整合）",
+      "ステークホルダーと協働して共通のビジョン・成功基準を定義する（Co-create Vision / ビジョンの共創）",
+      "ビジョンに関する誤解の根本原因を特定・解消する（Identify Root Cause of Misunderstanding of the Vision / ビジョン誤解の根本原因特定と解消）",
+      "プロジェクト全体を通じてビジョンを継続的に伝達・再確認する（Communicate Vision / ビジョンの継続的伝達）",
+      "ビジョンの達成に向けたチームのコミットメントとオーナーシップを醸成する（Foster Ownership / 当事者意識の醸成）"
+    ],
+    "key_points": [
+      "ビジョンが曖昧なまま作業を開始するとスコープクリープや優先順位の対立が起きるため、立ち上げ早期に合意形成する。",
+      "アジャイルではプロダクトオーナー（Product Owner / プロダクトオーナー）がProduct Vision（プロダクトビジョン）を示し、毎スプリントで目的を再確認する。",
+      "リーダーは指示命令ではなく、共通ビジョンへの共感を通じてチームの自律的行動を引き出す（Servant Leadership / サーバントリーダーシップ）。"
+    ],
+    "approach_diff": {
+      "predictive": "Project Charter（プロジェクト憲章）とProject Scope Statement（プロジェクト・スコープ記述書）で目標・成功基準を明文化し、キックオフミーティングで合意する。",
+      "agile_hybrid": "Product Vision Statement（プロダクトビジョン声明）やElevator Pitch（エレベーターピッチ）を用い、インセプションデッキやスプリントゴールを通じて反復的にビジョンを共有・調整する。"
+    },
+    "related_tools": [
+      "Project Charter（プロジェクト憲章）",
+      "Team Charter（チーム憲章）",
+      "Business Case（ビジネスケース）",
+      "Product Vision（プロダクトビジョン）"
+    ]
+  },
+  {
+    "id": "P-2",
+    "domain": "People",
+    "title_en": "Manage conflicts",
+    "title_ja": "コンフリクトの管理",
+    "summary": "プロジェクト内で発生する意見の対立や利害の衝突（コンフリクト）を早期に検知し、原因と状況を分析したうえで建設的な解決へ導く。対立を排除するのではなく、イノベーションや相互理解の機会として活用する。",
+    "enablers": [
+      "コンフリクトの発生源（資源・スケジュール・優先順位・技術的見解など）と段階を特定する（Identify Conflict Source / 原因の特定）",
+      "コンテキストに応じた適切な解決モードを選択・適用する（Apply Conflict Resolution Modes / 解決モードの適用）",
+      "心理的安全性（Psychological Safety）を確保し、オープンで建設的な対話を促進する（Facilitate Open Dialogue / オープンな対話）",
+      "Team Charter（チーム憲章）のグラウンドルールに基づき自律的な解決を支援する（Use Ground Rules / グラウンドルールの活用）"
+    ],
+    "key_points": [
+      "Thomas-Kilmann Conflict Modes（トーマス・キルマン・コンフリクトモード）では、長期的なWin-Winを目指すCollaborating / Problem Solving（協働・問題解決）が原則として最善とされる。",
+      "緊急時や危機対応ではForcing / Directing（強制・指示）が有効な場合があり、一時的な鎮静化にはSmoothing / Accommodating（融和・順応）やAvoiding / Withdrawing（回避・撤退）を使う。",
+      "チームメンバー間の対立は、まず当事者同士での解決を促し、PMはファシリテーターとして支援する。"
+    ],
+    "approach_diff": {
+      "predictive": "PMが仲裁者となり、Team Charter（チーム憲章）やRACI Chart（RACIチャート）の役割定義を参照しながら合意形成を図る。",
+      "agile_hybrid": "自己組織化チームがRetrospective（レトロスペクティブ）やDaily Standup（デイリースタンドアップ）の場で自律的に対話し、スクラムマスター/PMは障害除去と心理的安全性の維持に注力する。"
+    },
+    "related_tools": [
+      "Thomas-Kilmann Conflict Modes（トーマス・キルマン・コンフリクトモード）",
+      "Team Charter（チーム憲章）",
+      "Emotional Intelligence (EI)（感情知性）",
+      "Active Listening（傾聴）"
+    ]
+  },
+  {
+    "id": "P-3",
+    "domain": "People",
+    "title_en": "Lead the project team",
+    "title_ja": "プロジェクトチームのリーダーシップ",
+    "summary": "チームメンバーの強みと多様性を活かし、明確な方向性・権限委譲・支援を提供することで高パフォーマンスなチームを育成・牽引する。AIツールの活用支援やバーチャルチームのエンゲージメント維持も含まれる。",
+    "enablers": [
+      "適切なリーダーシップスタイル（Servant Leadership等）を状況に応じて使い分ける（Adapt Leadership Style / リーダーシップの適応）",
+      "チームメンバーのモチベーション要因を理解し、エンパワーメント（権限委譲）を行う（Empower Team Members / 権限委譲）",
+      "Tuckman Ladder（タックマンモデル）の発達段階に応じたチームビルディングを実施する（Build Team Cohesion / チーム結束の強化）",
+      "スキルギャップを特定し、トレーニングやメンタリング・コーチングを手配する（Support Skill Development / スキル開発支援）"
+    ],
+    "key_points": [
+      "PMP試験の鉄則は「コマンド＆コントロール」ではなくServant Leadership（サーバントリーダーシップ）：障害を取り除き、チームが価値を生み出せる環境を整える。",
+      "Tuckman Ladder（タックマンモデル：Forming → Storming → Norming → Performing → Adjourning）のどの段階にあるかを見極め、新メンバー加入時は再形成に配慮する。",
+      "バーチャルチームやハイブリッド勤務環境では、非同期コミュニケーションツールと定期的な同期ミーティングを組み合わせ、孤立を防ぐ。"
+    ],
+    "approach_diff": {
+      "predictive": "PMが明確な役割分担（RACI Chart / 責任分担表）と計画に基づいてチームを統率し、パフォーマンス評価や報酬・表彰を通じて動機付けを行う。",
+      "agile_hybrid": "自己組織化・クロスファンクショナルなチームに対し、Servant Leader（サーバントリーダー）として障害（Impediments）を除去し、自己決定と実験を奨励する。"
+    },
+    "related_tools": [
+      "Servant Leadership（サーバントリーダーシップ）",
+      "Tuckman Ladder（タックマンモデル）",
+      "Herzberg Two-Factor Theory（ハーズバーグ二要因理論）",
+      "Emotional Intelligence (EI)（感情知性）"
+    ]
+  },
+  {
+    "id": "P-4",
+    "domain": "People",
+    "title_en": "Engage stakeholders",
+    "title_ja": "ステークホルダーのエンゲージメント",
+    "summary": "プロジェクトに影響を与える、または影響を受けるすべてのステークホルダーを継続的に特定・分析し、適切なレベルでプロジェクトに参画させる。価値の共創と抵抗の軽減を目的とする。",
+    "enablers": [
+      "プロジェクト全期間を通じてステークホルダーを特定し、Stakeholder Register（ステークホルダー登録簿）を更新する（Identify Stakeholders / ステークホルダーの特定）",
+      "Power/Interest Grid（権力・関心グリッド）やSalience Model（顕著性モデル）で影響力と関心を分析・分類する（Analyze Stakeholders / ステークホルダー分析）",
+      "Stakeholder Engagement Assessment Matrix（ステークホルダー・エンゲージメント評価マトリクス）で現状と目標のギャップを把握する（Assess Engagement Gap / ギャップ分析）",
+      "エンゲージメント戦略を実行し、フィードバックループを確立する（Execute Engagement Strategy / エンゲージメント戦略の実行）"
+    ],
+    "key_points": [
+      "新規ステークホルダーが発見されたら、最初に行うべきはStakeholder Register（ステークホルダー登録簿）への追加と分析である。",
+      "抵抗的（Resistant）なステークホルダーに対しては、無視や対立ではなく、懸念の傾聴・早期の巻き込み・適切な情報提供によって中立（Neutral）〜支援的（Supportive）へ引き上げる。",
+      "ステークホルダーの特定・分析は立ち上げ時だけでなく、フェーズ移行や組織変更のたびに継続的に見直す。"
+    ],
+    "approach_diff": {
+      "predictive": "Stakeholder Engagement Plan（ステークホルダー・エンゲージメント計画書）を策定し、フェーズゲートや定例報告を通じて計画的に関与を維持する。",
+      "agile_hybrid": "Sprint Review（スプリントレビュー）やプロダクトデモにステークホルダーを直接招き、動く成果物に対する高頻度なフィードバックを通じて継続的に巻き込む。"
+    },
+    "related_tools": [
+      "Stakeholder Register（ステークホルダー登録簿）",
+      "Power/Interest Grid（権力・関心グリッド）",
+      "Stakeholder Engagement Assessment Matrix（ステークホルダー・エンゲージメント評価マトリクス）",
+      "Salience Model（顕著性モデル）"
+    ]
+  },
+  {
+    "id": "P-5",
+    "domain": "People",
+    "title_en": "Align stakeholder expectations",
+    "title_ja": "ステークホルダーの期待の調整",
+    "summary": "多様なステークホルダー間で異なる要求・優先順位・成功基準を調整し、プロジェクトの方向性と一致させる。対立する期待をトレードオフ分析によって合意可能な状態へ導く。",
+    "enablers": [
+      "ステークホルダーごとの期待・要求・成功の定義を明確化する（Clarify Expectations / 期待の明確化）",
+      "矛盾・競合する期待や要求を特定し、優先順位付けのワークショップをファシリテートする（Reconcile Conflicting Expectations / 競合の調整）",
+      "スコープ・スケジュール・コスト・品質・リスク・価値のトレードオフについて合意を形成する（Negotiate Trade-offs / トレードオフの合意）",
+      "変更や環境変化に応じて期待の再調整を継続的に行う（Re-align Continuously / 継続的再調整）"
+    ],
+    "key_points": [
+      "「期待の調整（Align）」は、各ステークホルダーが持つバラバラのゴールをすり合わせて共通の合意ラインを作ること（P-6の「管理」の前段・協調プロセス）。",
+      "2026年ECOでは特にBusiness Environment（ビジネス環境）や価値（Value）の観点から、部門間の利害対立を調整する能力が重視される。",
+      "非現実的な期待（例：スコープ増大を伴う納期短縮）には、データ（EVMやベロシティ等）を示して現実的な選択肢を提示する。"
+    ],
+    "approach_diff": {
+      "predictive": "要件収集ワークショップ（JAD等）や変更管理プロセスを通じて、スコープ・納期・コストのベースラインに対する期待を公式に合意・固定する。",
+      "agile_hybrid": "Backlog Refinement（バックログリファインメント）やProduct Roadmap（プロダクトロードマップ）の共有を通じて、優先順位とリリース時期の期待を継続的にすり合わせる。"
+    },
+    "related_tools": [
+      "Requirement Traceability Matrix (RTM)（要求事項トレーサビリティマトリクス）",
+      "MoSCoW Prioritization（MoSCoW優先順位付け）",
+      "Facilitation（ファシリテーション）",
+      "Stakeholder Engagement Plan（ステークホルダー・エンゲージメント計画書）"
+    ]
+  },
+  {
+    "id": "P-6",
+    "domain": "People",
+    "title_en": "Manage stakeholder expectations",
+    "title_ja": "ステークホルダーの期待の管理",
+    "summary": "合意された期待がプロジェクト進行中も適切に維持・履行されるよう、定期的なコミュニケーション・課題解決・信頼構築を通じて期待値をコントロールする。",
+    "enablers": [
+      "プロジェクトの進捗・リスク・変更に関する透明性の高い情報を適時に提供する（Provide Transparent Updates / 透明性の高い情報提供）",
+      "ステークホルダーの懸念や不満を早期に察知し、Issue Log（課題ログ）に記録して迅速に対応する（Address Concerns Promptly / 懸念への迅速対応）",
+      "スコープクリープや根拠のない約束を防ぎ、公式な変更管理やバックログ調整へ誘導する（Prevent Scope Creep / スコープクリープ防止）",
+      "期待と実績のギャップを定期的に評価し、是正措置や期待値の再設定を行う（Monitor Expectation Gaps / ギャップ監視）"
+    ],
+    "key_points": [
+      "悪いニュース（遅延・コスト超過・重大リスク）ほど隠さずに早期に共有し、対策案とセットで提示するのがPMPの鉄則。",
+      "「要望を何でも受け入れる」のではなく、プロジェクト目標・価値・合意されたルールに基づいて適切にノーと言う・代替案を示すことが期待管理の本質。",
+      "ステークホルダーからの非公式な追加要望は、勝手に実装せずChange Request（変更要求）またはProduct Backlog（プロダクトバックログ）への追加・優先順位再評価に回す。"
+    ],
+    "approach_diff": {
+      "predictive": "定例ステータスレポート、変更要求（Change Request）の審査、公式なレビュー承認を通じて、ベースラインに対する期待を管理する。",
+      "agile_hybrid": "Information Radiator（情報ラジエーター：カンバンボード、バーンダウンチャート）による常時可視化と、スプリントレビューでのフィードバック反映で期待を管理する。"
+    },
+    "related_tools": [
+      "Issue Log（課題ログ）",
+      "Change Log（変更ログ）",
+      "Information Radiator（情報ラジエーター）",
+      "Status Report（状況報告書）"
+    ]
+  },
+  {
+    "id": "P-7",
+    "domain": "People",
+    "title_en": "Help ensure knowledge transfer",
+    "title_ja": "知識移転の確保",
+    "summary": "プロジェクトで得られた暗黙知・形式知をチーム内および組織全体で共有・蓄積・再利用できる仕組みを整え、属人化の解消と組織的学習（Lessons Learned）を推進する。",
+    "enablers": [
+      "プロジェクト期間中にLessons Learned Register（教訓登録簿）を継続的に更新する（Maintain Lessons Learned / 教訓の継続的記録）",
+      "暗黙知を形式知化するための場（ペアプログラミング、シャドウイング、コミュニティ・オブ・プラクティス等）を設ける（Facilitate Tacit Knowledge Sharing / 暗黙知の共有）",
+      "ナレッジマネジメントリポジトリ（Knowledge Repository）へのアクセスと更新ルールを整備する（Manage Knowledge Repository / ナレッジ基盤整備）",
+      "プロジェクト終結時やメンバー交代時に引き継ぎとOPA（組織のプロセス資産）への還元を確実に行う（Ensure Handover & OPA Update / 引き継ぎとOPA更新）"
+    ],
+    "key_points": [
+      "教訓（Lessons Learned）はプロジェクト終結時だけでなく、プロジェクト開始時から全期間を通じて継続的に記録・活用する。",
+      "単なる文書化（Explicit Knowledge / 形式知）だけでなく、対話・ペアワーク・メンタリングを通じた暗黙知（Tacit Knowledge）の移転が重視される。",
+      "2026年ECOでは、AIを活用したナレッジ検索・要約・ドキュメント生成の活用と、その出力の人間による検証も重要トピック。"
+    ],
+    "approach_diff": {
+      "predictive": "Lessons Learned Register（教訓登録簿）をフェーズゲートや終結時にレビューし、Lessons Learned Repository（教訓リポジトリ）やOPAへ格納する。",
+      "agile_hybrid": "Iteration Retrospective（イテレーション・レトロスペクティブ）での継続的振り返り、Pair Programming（ペアプログラミング）、Swarming（スウォーミング）、Wikiでの軽量ドキュメント共有を活用する。"
+    },
+    "related_tools": [
+      "Lessons Learned Register（教訓登録簿）",
+      "Knowledge Management Tools（ナレッジマネジメントツール）",
+      "Retrospective（レトロスペクティブ）",
+      "Community of Practice (CoP)（実践コミュニティ）"
+    ]
+  },
+  {
+    "id": "P-8",
+    "domain": "People",
+    "title_en": "Plan and manage communication",
+    "title_ja": "コミュニケーションの計画と管理",
+    "summary": "ステークホルダーの情報ニーズ（誰に・何を・いつ・どの媒体で・誰が）を分析し、効果的かつ効率的なコミュニケーション計画を策定・実行・監視する。",
+    "enablers": [
+      "ステークホルダーごとの情報ニーズ・言語・タイムゾーン・文化的背景を分析する（Analyze Communication Needs / 情報ニーズ分析）",
+      "Communications Management Plan（コミュニケーション・マネジメント計画書）を策定・維持する（Develop Communication Plan / 計画策定）",
+      "適切なコミュニケーション手法（Push / Pull / Interactive）とチャネルを選択する（Select Methods & Channels / 手法とチャネル選択）",
+      "コミュニケーションの効果を測定し、ノイズや誤解があれば計画を改善する（Monitor & Improve Effectiveness / 効果監視と改善）"
+    ],
+    "key_points": [
+      "コミュニケーションチャネル数の公式 `N(N-1)/2` を理解し、チーム規模拡大に伴う伝達複雑性の増大に備える。",
+      "手法の使い分け：双方向合意形成にはInteractive（対話型：会議・ビデオ通話）、一斉通知にはPush（プッシュ型：メール・報告書）、大容量データや自己参照にはPull（プル型：ポータル・Wiki）。",
+      "ステークホルダーから「情報が届いていない」「誤解している」と指摘された場合、まずCommunications Management Plan（コミュニケーション・マネジメント計画書）の見直しを行う。"
+    ],
+    "approach_diff": {
+      "predictive": "Communications Management Plan（コミュニケーション・マネジメント計画書）で報告頻度・フォーマット・承認フローを厳格に定義し、計画通りに配信する。",
+      "agile_hybrid": "対面・高帯域（Osmotic Communication / 浸透的コミュニケーション）や共通ダッシュボード（Information Radiator）を優先し、最小限の公式文書で高頻度に同期する。"
+    },
+    "related_tools": [
+      "Communications Management Plan（コミュニケーション・マネジメント計画書）",
+      "Communication Channels Formula（コミュニケーションチャネル数計算式）",
+      "Communication Models（コミュニケーションモデル：Sender-Receiver）",
+      "Information Radiator（情報ラジエーター）"
+    ]
+  },
+  {
+    "id": "PR-1",
+    "domain": "Process",
+    "title_en": "Develop an integrated project management plan and plan delivery",
+    "title_ja": "統合プロジェクトマネジメント計画の策定とデリバリー計画",
+    "summary": "プロジェクトの特性（不確実性・複雑性・要求の明確さ）に応じて最適な開発アプローチ（予測型・アジャイル型・ハイブリッド型）を選択（テーラリング）し、各知識エリアの計画を統合したプロジェクトマネジメント計画書を策定する。",
+    "enablers": [
+      "プロジェクトの規模・複雑性・不確実性を評価し、開発アプローチ（Development Approach）とライフサイクルを決定する（Select Development Approach / 開発アプローチの選定）",
+      "組織のガバナンスやプロセスをプロジェクトに合わせてテーラリング（Tailoring）する（Tailor Processes / テーラリング）",
+      "スコープ・スケジュール・コスト・品質・資源・リスク等の補助計画を統合し、矛盾のないProject Management Plan（プロジェクトマネジメント計画書）を作成する（Integrate Subsidiary Plans / 補助計画の統合）",
+      "デリバリーケイデンス（単発・複数・定期・継続的デリバリー）を設計し、ベースラインを承認する（Plan Delivery Cadence / デリバリー計画）"
+    ],
+    "key_points": [
+      "2026年ECOでは「すべてに同じ手法を使う」のではなく、Cynefin Framework（クネビン・フレームワーク）やStacey Matrix（ステイシー・マトリクス）等を参考に文脈に応じて予測型・アジャイル・ハイブリッドをテーラリングする能力が問われる。",
+      "統合計画は一度作って終わりではなく、変更要求や学習に応じてProgressive Elaboration（段階的詳細化）で更新される。",
+      "計画策定時はPM一人で作成するのではなく、チームや主要ステークホルダーを巻き込んで合意形成する。"
+    ],
+    "approach_diff": {
+      "predictive": "プロジェクト初期にProject Management Plan（プロジェクトマネジメント計画書）と各ベースライン（スコープ・スケジュール・コスト）を詳細に策定・承認し、ベースラインに沿って実行する。",
+      "agile_hybrid": "リリース計画と高レベルのロードマップを作成し、イテレーション単位（Sprint Planning）で直近の作業のみを詳細化するローリングウェーブ計画・適応型計画を採用する。"
+    },
+    "related_tools": [
+      "Project Management Plan（プロジェクトマネジメント計画書）",
+      "Tailoring（テーラリング）",
+      "Stacey Matrix（ステイシー・マトリクス）",
+      "Cynefin Framework（クネビン・フレームワーク）"
+    ]
+  },
+  {
+    "id": "PR-2",
+    "domain": "Process",
+    "title_en": "Develop and manage project scope",
+    "title_ja": "プロジェクトスコープの策定と管理",
+    "summary": "プロジェクトの成功に必要な作業と成果物を明確に定義し、不要な作業（Gold Plating / スコープクリープ）を排除しながら、合意されたスコープを継続的に管理・検証する。",
+    "enablers": [
+      "ステークホルダーから要求事項を収集・分析・優先順位付けする（Elicit & Prioritize Requirements / 要求事項の収集と優先順位付け）",
+      "予測型ではWBS（Work Breakdown Structure / 作業分解構成図）、アジャイルではProduct Backlog（プロダクトバックログ）を作成・維持する（Decompose Scope / スコープの分解）",
+      "Scope Baseline（スコープベースライン）またはDoD（Definition of Done / 完了の定義）に基づき成果物を検証（Validate Scope）する（Validate Deliverables / 成果物の検証）",
+      "スコープクリープを防止し、変更は正規の変更管理プロセスまたはバックログ再優先順位付けで統制する（Control Scope / スコープの統制）"
+    ],
+    "key_points": [
+      "Gold Plating（金メッキ：承認されていない過剰機能の勝手な追加）もScope Creep（スコープクリープ：無統制な範囲拡大）も厳禁。",
+      "Validate Scope（スコープの妥当性確認：顧客・スポンサーによる公式受入）とControl Quality（品質管理：技術的正確性の内部検査）の違いを明確に区別する（原則：品質管理が先、妥当性確認が後）。",
+      "Requirement Traceability Matrix (RTM)（要求事項トレーサビリティマトリクス）により、すべての要求がビジネス目標とテスト結果に紐づいていることを保証する。"
+    ],
+    "approach_diff": {
+      "predictive": "Scope Statement（スコープ記述書）・WBS・WBS Dictionary（WBS辞書）の3点セットでScope Baseline（スコープベースライン）を固定し、変更はCCB等の公式承認を経る。",
+      "agile_hybrid": "スコープは固定せずProduct Backlog（プロダクトバックログ）として動的に管理し、時間とコストを固定してProduct Owner（プロダクトオーナー）がビジネス価値順に優先順位を調整する。"
+    },
+    "related_tools": [
+      "WBS (Work Breakdown Structure)（作業分解構成図）",
+      "WBS Dictionary（WBS辞書）",
+      "Product Backlog（プロダクトバックログ）",
+      "Requirement Traceability Matrix (RTM)（要求事項トレーサビリティマトリクス）"
+    ]
+  },
+  {
+    "id": "PR-3",
+    "domain": "Process",
+    "title_en": "Help ensure value-based delivery",
+    "title_ja": "価値ベース・デリバリーの確保",
+    "summary": "単なる「計画通りのアウトプット（成果物）の納品」にとどまらず、顧客や組織にとっての「アウトカム（成果）とビジネス価値」を最大化するように作業を優先順位付けし、段階的・早期に価値を届ける。",
+    "enablers": [
+      "ステークホルダーと協働してプロジェクトの「価値（Value）」の定義と測定指標を明確化する（Define Value Metrics / 価値指標の定義）",
+      "ROI・NPV・リスク・依存関係・緊急度（Cost of Delay）を考慮して作業やバックログを優先順位付けする（Prioritize by Value / 価値に基づく優先順位付け）",
+      "MVP（Minimum Viable Product / 実用最小限の製品）やインクリメントを早期にリリースし、早期の投資回収とフィードバック獲得を図る（Deliver Incrementally / 段階的価値提供）",
+      "Value Stream Mapping（バリューストリームマッピング）等を用いて無駄（Waste）を排除し、価値提供までのリードタイムを短縮する（Optimize Value Stream / バリューストリーム最適化）"
+    ],
+    "key_points": [
+      "2026年ECOの最重要テーマの一つ：アウトプット（Output：機能を作ること）からアウトカム（Outcome：価値・便益を実現すること）へのシフト。",
+      "もし価値が実現できない・ビジネスケースが成立しなくなったと判断された場合は、プロジェクトのピボット（方針転換）や早期終了をスポンサーに提案する勇気も問われる。",
+      "優先順位付け手法（WSJF / Weighted Shortest Job First / 加重最短ジョブ優先、MoSCoW、Kano Model / 狩野モデル 等）を活用し、最も価値が高くリスクの低い／学習効果の高い項目から着手する。"
+    ],
+    "approach_diff": {
+      "predictive": "フェーズゲートごとにBusiness Case（ビジネスケース）とBenefits Management Plan（ベネフィット・マネジメント計画書）への整合性を検証し、移行計画を通じて価値を実現する。",
+      "agile_hybrid": "MVP（実用最小限の製品）やMMF（Minimum Marketable Feature / 最小市場価値機能）を短いイテレーションで提供し、市場・ユーザーの反応を見ながら価値最大化へ軌道修正する。"
+    },
+    "related_tools": [
+      "Minimum Viable Product (MVP)（実用最小限の製品）",
+      "Value Stream Mapping (VSM)（バリューストリームマッピング）",
+      "MoSCoW Prioritization（MoSCoW優先順位付け）",
+      "Weighted Shortest Job First (WSJF)（加重最短ジョブ優先）"
+    ]
+  },
+  {
+    "id": "PR-4",
+    "domain": "Process",
+    "title_en": "Plan and manage resources",
+    "title_ja": "資源の計画と管理",
+    "summary": "プロジェクトに必要な人的資源（チームメンバー）および物的資源（設備・資材・クラウド・AIツール等）を見積もり、確保・配分・最適化・解放までをライフサイクル全体で管理する。",
+    "enablers": [
+      "必要なスキルセット・設備・ツール・AIリソースを見積もり、Resource Management Plan（資源マネジメント計画書）を策定する（Estimate & Plan Resources / 資源の見積もりと計画）",
+      "機能部門マネージャーや外部ベンダーと交渉し、適切なタイミングで資源を確保する（Acquire Resources / 資源の確保）",
+      "Resource Leveling（資源平準化）やResource Smoothing（資源平滑化）を用いて過負荷やボトルネックを解消する（Optimize Resource Allocation / 資源配分の最適化）",
+      "物的資源の消費・稼働状況を監視し、不要になった資源を適切に解放する（Control & Release Resources / 資源の監視と解放）"
+    ],
+    "key_points": [
+      "Resource Leveling（資源平準化）は資源制約を解消するためにクリティカルパスが延びる（納期延長する）可能性がある一方、Resource Smoothing（資源平滑化）はフリーフロート・トータルフロートの範囲内で調整するためクリティカルパスは変わらない。",
+      "キーパーソンが他プロジェクトに引き抜かれそうな場合は、まず機能部門マネージャーとの交渉や代替案・ナレッジ移転を検討する。",
+      "チームは「T字型（T-shaped）スキル（専門分野＋幅広い周辺知識）」を育成することでボトルネックを緩和できる。"
+    ],
+    "approach_diff": {
+      "predictive": "RACI Chart（責任分担表）、Resource Breakdown Structure (RBS)（資源ブレークダウンストラクチャ）、資源ヒストグラムを用いて事前に詳細な資源計画と配分を確定する。",
+      "agile_hybrid": "専任（Dedicated）・クロスファンクショナルな固定チームを維持し、プロジェクトに人を割り当てるのではなく「安定したチームに作業（バックログ）を流す」考え方をとる。"
+    },
+    "related_tools": [
+      "RACI Chart（責任分担表）",
+      "Resource Leveling / Resource Smoothing（資源平準化 / 資源平滑化）",
+      "Resource Breakdown Structure (RBS)（資源ブレークダウンストラクチャ）",
+      "Resource Histogram（資源ヒストグラム）"
+    ]
+  },
+  {
+    "id": "PR-5",
+    "domain": "Process",
+    "title_en": "Plan and manage procurement",
+    "title_ja": "調達の計画と管理",
+    "summary": "外部ベンダーからの購入・外注（Make-or-Buy分析）を判断し、適切な契約形態の選定、入札・ベンダー選定、契約履行の監視、および調達の終結までを管理する。",
+    "enablers": [
+      "Make-or-Buy Analysis（内外製分析）を実施し、外部調達の範囲と戦略を決定する（Conduct Make-or-Buy Analysis / 内外製分析）",
+      "スコープの明確さとリスク分担に応じて最適な契約タイプ（FFP, FPIF, T&M, Cost-Reimbursable等）を選定する（Select Contract Type / 契約タイプの選定）",
+      "Procurement SOW（調達作業範囲記述書）・RFP（Request for Proposal / 提案依頼書）等を作成し、Bidder Conference（入札者会議）や選定基準により公平にベンダーを選定する（Conduct Procurement / 調達の実施）",
+      "契約上の義務・SLA（Service Level Agreement / サービスレベル合意書）・支払・変更・クレーム（ADR：Alternative Dispute Resolution / 裁判外紛争解決手続 等）を管理し、調達を公式に終結させる（Control & Close Procurement / 調達の統制と終結）"
+    ],
+    "key_points": [
+      "契約とリスク負担：Fixed-Price（定額契約：FFP）は売り手（ベンダー）のリスクが最大、Cost-Reimbursable（実費償還契約：CPFF等）は買い手のリスクが最大。",
+      "Time & Materials (T&M)（タイム＆マテリアル契約）は要件が不明確な短期・専門家支援やアジャイル調達に適するが、上限額（Not-to-Exceed）を設けてコスト暴走を防ぐ。",
+      "入札者会議（Bidder Conference）ではすべての潜在的売り手に同一の情報を公平に提供し、談合や特定ベンダーへの優遇を避ける。"
+    ],
+    "approach_diff": {
+      "predictive": "詳細なProcurement SOW（調達作業範囲記述書）と固定価格契約（FFP等）を中心に、事前確定した成果物と検収条件に基づいて厳格に管理する。",
+      "agile_hybrid": "固定価格インクリメント契約、マルチティア契約、T&M上限付き契約などを活用し、ベンダーを「対立する業者」ではなく「協働パートナー」としてスプリントレビュー等に統合する。"
+    },
+    "related_tools": [
+      "Make-or-Buy Analysis（内外製分析）",
+      "Procurement Statement of Work (SOW)（調達作業範囲記述書）",
+      "Contract Types (FFP, FPIF, CPFF, CPIF, T&M)（契約種別）",
+      "Bidder Conference（入札者会議）"
+    ]
+  },
+  {
+    "id": "PR-6",
+    "domain": "Process",
+    "title_en": "Plan and manage finance",
+    "title_ja": "財務・予算の計画と管理",
+    "summary": "プロジェクトのコストを見積もり、コンティンジェンシー予備・マネジメント予備を含めた予算・コストベースラインを設定し、EVM（アーンドバリューマネジメント）等を用いて財務状況を監視・予測・統制する。",
+    "enablers": [
+      "類推・パラメトリック・ボトムアップ・三点見積もり等を用いてコストを見積もる（Estimate Costs / コスト見積もり）",
+      "Cost Baseline（コストベースライン：作業パッケージ見積＋コンティンジェンシー予備）とProject Budget（プロジェクト予算：＋マネジメント予備）を策定する（Determine Budget / 予算設定）",
+      "EVM（CPI, SPI, EAC, ETC, VAC, TCPI等）やバーンレートを用いてコストパフォーマンスを監視・予測する（Monitor Financial Performance / 財務監視と予測）",
+      "資金調達制限（Funding Limit Reconciliation）や予算超過リスクに対応し、コスト変更を統制する（Control Costs & Funding / コストと資金の統制）"
+    ],
+    "key_points": [
+      "コンティンジェンシー予備（Contingency Reserve）は既知の未知（Known-Unknowns）に備えPM権限で使用可能でCost Baselineに含まれる。マネジメント予備（Management Reserve）は未知の未知（Unknown-Unknowns）に備えスポンサー承認が必要でCost Baselineには含まれない（Project Budgetには含まれる）。",
+      "EVMの基本判断：CPI < 1.0 は予算超過（Over Budget）、SPI < 1.0 はスケジュール遅延（Behind Schedule）。",
+      "プロジェクトの費用対効果（ROI, NPV, IRR, Payback Period）を常に意識し、サンクコスト（Sunk Cost / 埋没費用）に引きずられて無価値なプロジェクトを継続しない。"
+    ],
+    "approach_diff": {
+      "predictive": "WBSに基づくボトムアップ見積もりでCost Baseline（コストベースライン）を作成し、EVM（EV, PV, AC, CPI, EAC）で進捗とコストを統合管理する。",
+      "agile_hybrid": "チームの固定バーンレート（チーム人数×単価×スプリント長）をベースに予算を設定し、リリースごとの残予算とEarned Value / Burnup Chartで投資対効果を監視する。"
+    },
+    "related_tools": [
+      "Earned Value Management (EVM)（アーンドバリューマネジメント）",
+      "Cost Baseline & Reserves（コストベースラインと予備費）",
+      "Three-Point Estimating（三点見積もり）",
+      "Funding Limit Reconciliation（資金調達制限調整）"
+    ]
+  },
+  {
+    "id": "PR-7",
+    "domain": "Process",
+    "title_en": "Plan and optimize quality of products/deliverables",
+    "title_ja": "成果物の品質の計画と最適化（※サステナビリティ含む）",
+    "summary": "顧客要求・法規制・組織標準・サステナビリティ基準を満たす品質基準を定義し、予防重視（Prevention over Inspection）の品質保証（QA）と品質管理（QC）を通じて欠陥を最小化し、継続的に品質を最適化する。",
+    "enablers": [
+      "品質基準・受入基準・環境サステナビリティ基準をQuality Management Plan（品質マネジメント計画書）に定義する（Define Quality & Sustainability Standards / 品質・持続可能性基準の定義）",
+      "Cost of Quality (CoQ)（品質コスト）の観点から、失敗コストより予防・評価コストへの投資を最適化する（Optimize Cost of Quality / 品質コストの最適化）",
+      "プロセス監査や品質保証（Manage Quality / QA）を実施し、欠陥の根本原因（Fishbone / 5 Whys）を除去する（Manage Quality & Root Cause / 品質保証と根本原因分析）",
+      "検査・テスト・管理図（Control Chart）等により成果物を検証し、逸脱を是正する（Control Quality / 品質管理）"
+    ],
+    "key_points": [
+      "PMPの品質原則：「検査（Inspection）ではなく予防（Prevention）」。欠陥を後から見つけるより、最初から欠陥を作らないプロセスを設計する方がCost of Quality（品質コスト）は低い。",
+      "管理図（Control Chart）のRule of 7（7の法則）：管理限界線（UCL/LCL）内であっても、7点連続で平均の片側にある場合や連続上昇/下降は「異常原因（Assignable Cause）」として調査が必要。",
+      "2026年ECOでは品質にサステナビリティ（省エネ設計、廃棄物削減、グリーンIT、ライフサイクル環境負荷低減）の視点が含まれる。"
+    ],
+    "approach_diff": {
+      "predictive": "Quality Management Plan（品質マネジメント計画書）とQuality Metrics（品質メトリクス）に基づき、フェーズごとのQA監査と成果物検査（QC）を実施する。",
+      "agile_hybrid": "Definition of Done (DoD)（完了の定義）、TDD（テスト駆動開発）、CI/CDによる自動テスト、ペアレビューを毎スプリントに組み込み、品質を内製化する。"
+    },
+    "related_tools": [
+      "Cost of Quality (CoQ)（品質コスト）",
+      "Control Chart（管理図）",
+      "Ishikawa / Fishbone Diagram（特性要因図 / フィッシュボーン図）",
+      "Definition of Done (DoD)（完了の定義）"
+    ]
+  },
+  {
+    "id": "PR-8",
+    "domain": "Process",
+    "title_en": "Plan and manage schedule",
+    "title_ja": "スケジュールの計画と管理",
+    "summary": "アクティビティの分解・順序付け・所要期間見積もりを行い、現実的なスケジュールモデルを構築する。クリティカルパスの監視やスケジュール短縮技法を用いて納期遵守と円滑なデリバリーを実現する。",
+    "enablers": [
+      "アクティビティを定義し、依存関係（FS, SS, FF, SF）とリード/ラグを用いてネットワーク図を作成する（Sequence Activities / アクティビティの順序付け）",
+      "PERT（三点見積もり）やパラメトリック見積もりで所要期間を算出し、Critical Path Method (CPM)（クリティカルパス法）でスケジュールを確定する（Develop Schedule / スケジュール作成）",
+      "遅延発生時はCrashing（クラッシング）やFast Tracking（ファストトラッキング）でスケジュールを回復する（Compress Schedule / スケジュール短縮）",
+      "アジャイル環境ではベロシティやフロー効率（リードタイム・サイクルタイム）を用いてデリバリー予測を行う（Forecast Delivery / デリバリー予測）"
+    ],
+    "key_points": [
+      "Crashing（クラッシング）＝資源追加等でコスト増（品質リスクは低）。Fast Tracking（ファストトラッキング）＝順次作業の並行実施でリワーク（手戻り）・品質リスク増（コスト増は原則なし）。",
+      "スケジュール短縮は必ずCritical Path（クリティカルパス：トータルフロート＝0の最長経路）上のアクティビティに対して行う。",
+      "Student Syndrome（スチューデント・シンドローム：締切直前まで着手しない）やParkinson's Law（パーキンソンの法則：作業は与えられた時間一杯まで膨張する）に注意する。"
+    ],
+    "approach_diff": {
+      "predictive": "WBSからアクティビティを分解し、CPM（クリティカルパス法）とGantt Chart（ガントチャート）でSchedule Baseline（スケジュールベースライン）を作成・監視する。",
+      "agile_hybrid": "固定タイムボックス（Sprint）とリリースロードマップを用い、チームのVelocity（ベロシティ）やCumulative Flow Diagram (CFD)（累積フロー図）で完了時期を確率的に予測する。"
+    },
+    "related_tools": [
+      "Critical Path Method (CPM)（クリティカルパス法）",
+      "Crashing & Fast Tracking（クラッシングとファストトラッキング）",
+      "Burndown / Burnup Chart（バーンダウン / バーンアップチャート）",
+      "Cumulative Flow Diagram (CFD)（累積フロー図）"
+    ]
+  },
+  {
+    "id": "PR-9",
+    "domain": "Process",
+    "title_en": "Evaluate project status",
+    "title_ja": "プロジェクト状況の評価（※AI活用分析・成果物管理含む）",
+    "summary": "実績データ・メトリクス・KPI・成果物の進捗状況を継続的に収集・分析（AIによる予測分析・異常検知を含む）し、計画との差異を評価して適切な是正措置・予防措置や意思決定に繋げる。",
+    "enablers": [
+      "作業パフォーマンスデータ（Work Performance Data）を収集し、分析して作業パフォーマンス情報（Information）と報告書（Reports）へ変換する（Collect & Analyze Performance Data / パフォーマンスデータの収集・分析）",
+      "EVM・ベロシティ・リードタイム・バーンレート等の指標を用いてトレンドと予測（Forecasting）を評価する（Evaluate Trends & Forecasts / トレンドと予測の評価）",
+      "AI駆動のアナリティクスや自動化ダッシュボードを活用して遅延・コスト超過・リスクの予兆を早期検知する（Leverage AI Analytics / AI分析の活用）",
+      "構成管理（Configuration Management）と成果物承認ステータスを追跡し、ベースラインとの整合性を保つ（Track Artifact & Deliverable Status / 成果物・構成管理）"
+    ],
+    "key_points": [
+      "Work Performance Data（生データ）→ Work Performance Information（計画と比較・分析された情報）→ Work Performance Reports（意思決定用の整形報告書）の流れを正確に理解する。",
+      "2026年ECOでは、AIツールを用いた予測分析（Predictive Analytics）や異常検知の活用と、AI出力のバイアス・正確性を人間（PM）がレビューする責任が強調されている。",
+      "状況評価で差異が見つかった場合は、単なる報告にとどまらず、根本原因を分析して是正措置（Corrective Action）または予防措置（Preventive Action）を講じる。"
+    ],
+    "approach_diff": {
+      "predictive": "EVM（CPI/SPI/EAC）、マイルストーンチャート、分散分析（Variance Analysis）を用いて計画対実績を定期評価し、ステータスレポートを発行する。",
+      "agile_hybrid": "バーンアップチャート、ベロシティ推移、カンバンのWIP制限・サイクルタイム、およびAutomated Dashboard（自動ダッシュボード）でリアルタイムに状況を評価する。"
+    },
+    "related_tools": [
+      "Work Performance Data / Information / Reports（作業パフォーマンスデータ・情報・報告書）",
+      "AI-driven Analytics（AI駆動分析）",
+      "Variance Analysis（差異分析）",
+      "Configuration Management System（構成管理システム）"
+    ]
+  },
+  {
+    "id": "PR-10",
+    "domain": "Process",
+    "title_en": "Manage project closure",
+    "title_ja": "プロジェクト終結の管理",
+    "summary": "プロジェクトまたはフェーズの完了条件を満たしたことを確認し、顧客からの公式受入・契約の精算・資源の解放・教訓のアーカイブ・ベネフィットの移行を漏れなく実施して公式に終結させる。",
+    "enablers": [
+      "すべての成果物が受入基準を満たし、顧客・スポンサーから公式サインオフ（Formal Sign-off）を取得する（Obtain Formal Acceptance / 公式受入の取得）",
+      "すべての調達契約の検収・支払・未解決クレームを完了し、契約を公式に終結させる（Close Procurements / 調達の終結）",
+      "Final Report（最終報告書）を作成し、Lessons Learned Register（教訓登録簿）およびOPA（組織のプロセス資産）を更新・アーカイブする（Archive Knowledge & Final Report / ナレッジのアーカイブと最終報告）",
+      "プロジェクト資源（人員・設備）を計画的に解放し、運用部門への引き継ぎ（Handover）とチームの成果祝福を行う（Release Resources & Transition / 資源解放と移行）"
+    ],
+    "key_points": [
+      "プロジェクトが「早期中止（Early Termination）」となった場合でも、終結プロセス（理由の記録、完了分の引き継ぎ、教訓記録、契約精算、資源解放）は必ず実施する。",
+      "終結の順序原則：①品質確認 → ②顧客受入（Validate Scope） → ③契約終結 → ④資源解放・アーカイブ → ⑤最終報告と祝福。",
+      "運用引き継ぎ後は、Benefits Management Plan（ベネフィット・マネジメント計画書）に基づき誰がベネフィット実現を追跡するかを引き継ぐ。"
+    ],
+    "approach_diff": {
+      "predictive": "Close Project or Phaseプロセスに従い、チェックリストに基づいて公式受入書・最終報告書・OPA更新・契約クローズを厳格に完了させる。",
+      "agile_hybrid": "各リリースやプロジェクト終了時に最終レトロスペクティブを実施し、運用チームへの引き継ぎ、バックログの整理、プロダクト指標の移行を行う。"
+    },
+    "related_tools": [
+      "Final Report（最終報告書）",
+      "Lessons Learned Register（教訓登録簿）",
+      "Closure Checklist（終結チェックリスト）",
+      "Formal Acceptance / Sign-off（公式受入・サインオフ）"
+    ]
+  },
+  {
+    "id": "BE-1",
+    "domain": "Business Environment",
+    "title_en": "Manage project governance",
+    "title_ja": "プロジェクト・ガバナンスの管理",
+    "summary": "組織のガバナンスフレームワーク（方針・意思決定構造・エスカレーションパス・ゲートレビュー）とプロジェクトの整合性を保ち、透明性と説明責任（アカウンタビリティ）を確保する。",
+    "enablers": [
+      "組織の方針・PMO基準・意思決定権限（Decision-making Authority）を把握し、プロジェクトに適用する（Align with Organizational Governance / 組織ガバナンスとの整合）",
+      "フェーズゲート（Phase Gate）やステージゲート、CCB（変更管理委員会）等のガバナンス構造を確立・運用する（Establish Governance Structures / ガバナンス構造の運用）",
+      "エスカレーションパスと権限範囲（Thresholds）を明確化し、権限を超える課題・リスクを適切にエスカレートする（Define Escalation Paths / エスカレーション経路の明確化）",
+      "プロジェクトのライフサイクル全体でガバナンス遵守状況と意思決定の監査可能性（Auditability）を維持する（Maintain Accountability / 説明責任の維持）"
+    ],
+    "key_points": [
+      "2026年ECOではBusiness Environmentドメインが26%へ大幅拡大しており、組織全体のガバナンスやポートフォリオ/プログラムとの接続が頻出する。",
+      "Governance（ガバナンス：意思決定の枠組み・方針・監視）とManagement（マネジメント：日々の実行・計画・統制）の違いを理解する。",
+      "PMの権限（プロジェクト憲章で付与）を超える変更やリスクは、勝手に判断せずスポンサーやCCB・ステアリングコミッティへエスカレートする。"
+    ],
+    "approach_diff": {
+      "predictive": "フェーズゲートレビュー、ステアリングコミッティ、変更管理委員会（CCB）など、事前定義された段階的承認プロセスによってガバナンスを効かせる。",
+      "agile_hybrid": "軽量なガバナンス（Lightweight Governance）として、プロダクトレビュー、予算上限管理、自動コンプライアンスチェック、明確なプロダクトオーナー権限を活用する。"
+    },
+    "related_tools": [
+      "Governance Framework（ガバナンス・フレームワーク）",
+      "Phase Gate / Stage-Gate Review（フェーズゲートレビュー）",
+      "Change Control Board (CCB)（変更管理委員会）",
+      "RACI Chart（責任分担表）"
+    ]
+  },
+  {
+    "id": "BE-2",
+    "domain": "Business Environment",
+    "title_en": "Manage project compliance",
+    "title_ja": "プロジェクト・コンプライアンスの管理",
+    "summary": "プロジェクトに適用される法令・規制・業界標準・セキュリティ要件・データプライバシー・AI倫理・環境規制・社内規定を特定し、継続的な遵守と監査対応を確実にする。",
+    "enablers": [
+      "プロジェクトに影響する内外の規制・コンプライアンス要件（GDPR、AI規制、ESG、安全基準等）を特定・分類する（Identify Compliance Requirements / コンプライアンス要件の特定）",
+      "コンプライアンス違反がもたらすリスクと影響度を評価し、対応策を計画に組み込む（Assess Compliance Risks / コンプライアンスリスク評価）",
+      "コンプライアンスを検証する監査・チェックリスト・メトリクスを確立し、定期的に遵守状況を検証する（Verify & Audit Compliance / 遵守状況の検証と監査）",
+      "違反やギャップが発見された場合、直ちに是正措置と必要なエスカレーションを実施する（Remediate Non-Compliance / 違反の是正）"
+    ],
+    "key_points": [
+      "コンプライアンス要件は「後付け」ではなく、立ち上げ・計画段階から要求事項・WBS・Definition of Done (DoD) に組み込む。",
+      "PMI Code of Ethics and Professional Conduct（PMI倫理・職務規定：責任・敬意・公正・誠実）に反する行為（贈収賄、データ改ざん、規制回避）は、たとえ顧客や上司の指示であっても拒否・報告する。",
+      "2026年ECOでは、AI利用に関するプライバシー・著作権・バイアス規制や環境（ESG）規制への準拠が重要視される。"
+    ],
+    "approach_diff": {
+      "predictive": "コンプライアンス管理計画・法務レビュー・フェーズごとの品質/規制監査（Compliance Audit）を通じて厳格に遵守を証明する。",
+      "agile_hybrid": "コンプライアンス要件をバックログアイテムおよびDefinition of Done (DoD) に組み込み、自動セキュリティ/準拠テスト（DevSecOps）や定期スプリントでの監査対応を行う。"
+    },
+    "related_tools": [
+      "Compliance Register / Checklist（コンプライアンス登録簿 / チェックリスト）",
+      "PMI Code of Ethics（PMI倫理・職務規定）",
+      "Quality / Compliance Audit（品質・コンプライアンス監査）",
+      "Definition of Done (DoD)（完了の定義）"
+    ]
+  },
+  {
+    "id": "BE-3",
+    "domain": "Business Environment",
+    "title_en": "Evaluate and deliver project benefits and value",
+    "title_ja": "プロジェクトのベネフィットと価値の評価・提供",
+    "summary": "プロジェクトが生み出すビジネス価値とベネフィット（財務的・非財務的・ESG価値）を定義・追跡し、組織の戦略目標の達成と持続可能な価値実現を確実にする。",
+    "enablers": [
+      "Business Case（ビジネスケース）およびBenefits Management Plan（ベネフィット・マネジメント計画書）に基づき価値目標とKPIを設定する（Establish Benefit Metrics / ベネフィット指標の設定）",
+      "プロジェクト進行中も継続的にベネフィット実現の可能性を評価し、戦略とのズレを修正する（Evaluate Ongoing Value / 継続的価値評価）",
+      "成果物のリリース後・移行後のベネフィット測定方法と責任者（Benefits Owner）を明確化する（Assign Benefit Ownership / ベネフィット責任者の明確化）",
+      "定量価値（NPV, ROI）だけでなく定性価値（顧客満足、ブランド、ESG・サステナビリティ）もバランスよく評価・報告する（Report Holistic Value / 包括的価値の報告）"
+    ],
+    "key_points": [
+      "Project Management Plan（プロジェクトマネジメント計画書）は「成果物をどう作るか」、Benefits Management Plan（ベネフィット・マネジメント計画書）は「作られた成果物からどう価値を生み出し測定するか」を定義する。",
+      "ベネフィットの多くはプロジェクト終結「後」の運用段階で実現されるため、運用部門への引き継ぎと測定体制の構築が不可欠。",
+      "価値が見込めなくなった場合は、サンクコストに固執せず中止・方向転換を提言する。"
+    ],
+    "approach_diff": {
+      "predictive": "Business Case（ビジネスケース）とBenefits Management Plan（ベネフィット・マネジメント計画書）をフェーズゲートごとに再評価し、プロジェクト完了後の運用移行でベネフィットを実現する。",
+      "agile_hybrid": "早期・高頻度のリリースによりプロジェクト進行中から段階的にベネフィットを実現し、OKRや顧客価値指標で毎リリース後に価値を検証する。"
+    },
+    "related_tools": [
+      "Business Case（ビジネスケース）",
+      "Benefits Management Plan（ベネフィット・マネジメント計画書）",
+      "NPV / IRR / ROI / BCR（投資評価指標）",
+      "OKR (Objectives and Key Results)（目標と主要な結果）"
+    ]
+  },
+  {
+    "id": "BE-4",
+    "domain": "Business Environment",
+    "title_en": "Evaluate and address external business environment changes",
+    "title_ja": "外部ビジネス環境変化の評価と対応",
+    "summary": "市場動向・技術革新（AI等）・法規制・競合・地政学・経済状況・気候変動などの外部ビジネス環境（EEF）の変化を継続的にスキャンし、プロジェクトスコープや優先順位・計画への影響を評価して迅速に適応する。",
+    "enablers": [
+      "PESTLE分析等を用いて外部環境（EEF：事業環境要因）の変化を継続的に監視する（Scan External Environment / 外部環境のスキャン）",
+      "外部環境変化がプロジェクトの価値・スコープ・リスク・スケジュールに与える影響を評価する（Assess Impact on Project / プロジェクトへの影響評価）",
+      "バックログの再優先順位付け、スコープ変更、または開発アプローチの見直しをステークホルダーへ提案・実行する（Recommend & Adapt Plans / 適応と計画変更）",
+      "変化へのレジリエンス（回復力・適応力）を高めるため、意思決定を迅速化する（Enhance Resilience / レジリエンス強化）"
+    ],
+    "key_points": [
+      "外部環境（法改正、競合の新製品、新技術の登場）が変化した際、「当初計画通りに作ること」に固執すると時代遅れの無価値な成果物になる。まず影響を評価し、変更提案やバックログ調整を行うのが正解。",
+      "Enterprise Environmental Factors (EEFs)（組織体の環境要因）はプロジェクトがコントロールできない外部・内部の制約や条件であり、継続的な監視が必要。",
+      "VUCA（変動性・不確実性・複雑性・曖昧性）環境下では、短期イテレーションとフィードバックループが変化への最良の防衛策となる。"
+    ],
+    "approach_diff": {
+      "predictive": "外部環境変化をトリガーとして統合変更管理（Perform Integrated Change Control）を起動し、ベースライン・ビジネスケースの見直しとCCB承認を行う。",
+      "agile_hybrid": "Product Backlog（プロダクトバックログ）の優先順位を即座に入れ替え、次のスプリントから新要件・新環境に対応した価値提供へピボットする。"
+    },
+    "related_tools": [
+      "PESTLE Analysis（PESTLE分析）",
+      "SWOT Analysis（SWOT分析）",
+      "Enterprise Environmental Factors (EEFs)（組織体の環境要因）",
+      "Integrated Change Control（統合変更管理）"
+    ]
+  },
+  {
+    "id": "BE-5",
+    "domain": "Business Environment",
+    "title_en": "Plan and manage project risk",
+    "title_ja": "プロジェクト・リスクの計画と管理（※サステナビリティリスク含む）",
+    "summary": "プロジェクト目標にプラス（好機：Opportunity）またはマイナス（脅威：Threat）の影響を与え得る不確実性（サステナビリティ・ESG・サプライチェーン・AIリスクを含む）を継続的に特定・分析・対応計画策定・監視する。",
+    "enablers": [
+      "Risk Management Plan（リスク・マネジメント計画書）でリスク許容度（Appetite/Threshold）と管理方法を定義する（Plan Risk Management / リスク計画）",
+      "定性的リスク分析（発生確率×影響度マトリクス）と定量的リスク分析（モンテカルロ、EMV、デシジョンツリー）を実施する（Analyze Risks / 定性・定量分析）",
+      "脅威（Avoid/Transfer/Mitigate/Accept/Escalate）および好機（Exploit/Share/Enhance/Accept/Escalate）に対する対応策を策定し、リスクオーナーを割り当てる（Plan & Assign Risk Responses / 対応策とオーナー割当）",
+      "リスク対応策を実行し、残存リスク・二次リスク・トリガー条件を継続的に監視する（Monitor Risks & Reserves / リスク監視）"
+    ],
+    "key_points": [
+      "リスク（未発生の不確実性）と課題（Issue：すでに発生した問題）を明確に区別する。リスクが顕在化したらIssue Log（課題ログ）へ移し、対応策を実行する。",
+      "リスク対応戦略の5種（脅威：回避・転嫁・軽減・受容・エスカレーション／好機：活用・共有・強化・受容・エスカレーション）を正確に使い分ける。",
+      "2026年ECOでは、気候変動・ESG・サプライチェーン寸断・AIセキュリティ/ハルシネーションなどのサステナビリティ・現代的リスクの考慮が重要。"
+    ],
+    "approach_diff": {
+      "predictive": "Risk Register（リスク登録簿）とRisk Breakdown Structure (RBS) を用いて詳細にリスクを管理し、コンティンジェンシー予備を積算・監視する。",
+      "agile_hybrid": "Risk-Adjusted Backlog（リスク調整済みバックログ）や毎スプリントのデイリースタンドアップ/レトロスペクティブで高リスク項目を早期検証（Spike）し、リスクを低減する。"
+    },
+    "related_tools": [
+      "Risk Register（リスク登録簿）",
+      "Probability & Impact Matrix（発生確率・影響度マトリクス）",
+      "Expected Monetary Value (EMV)（期待金額価値）",
+      "Monte Carlo Simulation（モンテカルロシミュレーション）"
+    ]
+  },
+  {
+    "id": "BE-6",
+    "domain": "Business Environment",
+    "title_en": "Manage project issue and change control",
+    "title_ja": "課題と変更管理",
+    "summary": "すでに発生した問題（課題：Issue）を迅速に記録・解決へ導くとともに、プロジェクトベースラインや成果物に対する変更要求を体系的・統合的に評価・承認・記録・反映する。",
+    "enablers": [
+      "発生した課題をIssue Log（課題ログ）に記録し、オーナーと解決期限を設定して追跡・解決する（Manage Issue Log / 課題ログ管理）",
+      "変更要求（Change Request）を受け付け、スコープ・コスト・スケジュール・品質・リスク・価値への統合的影響を分析する（Assess Change Impact / 変更影響分析）",
+      "ガバナンス基準に従い、承認権限者（PMまたはCCB）による承認・却下・保留を決定し、Change Log（変更ログ）に記録する（Approve & Log Changes / 変更の承認と記録）",
+      "承認された変更を計画書・ベースライン・バックログに反映し、関係者に周知する（Implement & Communicate Changes / 変更の反映と周知）"
+    ],
+    "key_points": [
+      "変更要求を受け取ったPMの最初の行動は「即座に実装する」でも「即座に断る」でもなく、「Change Requestとして記録し、影響分析（Impact Analysis）を行う」こと。",
+      "承認されていない変更は絶対に実行しない。承認後には必ず関連するすべての計画書・ベースライン・ステークホルダーへの通知を更新する。",
+      "Issue（課題）は現在進行中の問題であり、対応策（Workaround等）の実行には変更要求が必要になる場合もある。"
+    ],
+    "approach_diff": {
+      "predictive": "Perform Integrated Change Control（統合変更管理）プロセスにより、公式なChange Request（変更要求）をCCB（変更管理委員会）で審査して厳格に統制する。",
+      "agile_hybrid": "変更を歓迎し、新たな要望はProduct Backlog（プロダクトバックログ）へ追加してProduct Ownerが価値順に再優先順位付けする（ただし進行中スプリントのスコープ保護が原則）。"
+    },
+    "related_tools": [
+      "Issue Log（課題ログ）",
+      "Change Log（変更ログ）",
+      "Change Request（変更要求）",
+      "Change Control Board (CCB)（変更管理委員会）"
+    ]
+  },
+  {
+    "id": "BE-7",
+    "domain": "Business Environment",
+    "title_en": "Support organizational change",
+    "title_ja": "組織変革の支援",
+    "summary": "プロジェクトの成果物が組織の業務プロセス・文化・働き方に変化をもたらすことを前提に、組織の準備度（Readiness）を評価し、変革への抵抗を和らげ、新しい状態への円滑な移行と定着（Adoption）を支援する。",
+    "enablers": [
+      "組織文化・変革受容度・影響を受ける部門のChange Readiness（変革準備度）を評価する（Assess Organizational Readiness / 組織準備度の評価）",
+      "ADKARモデルやKotterの8段階プロセス等の変革マネジメント手法を用いて導入・定着計画を策定する（Apply Change Management Models / 変革モデルの適用）",
+      "変革のチャンピオン（Change Champions）を育成し、トレーニング・コミュニケーション・サポート体制を提供する（Enable Adoption & Training / 定着支援と研修）",
+      "導入後の定着状況を測定し、古いやり方への逆戻りを防ぐ強化策を実施する（Sustain Organizational Change / 変革の定着維持）"
+    ],
+    "key_points": [
+      "どんなに技術的に優れたシステムを作っても、現場のユーザーが受け入れて使わなければプロジェクトの価値（ベネフィット）はゼロになる。",
+      "ADKAR（Awareness：認識 → Desire：欲求 → Knowledge：知識 → Ability：能力 → Reinforcement：定着）の順序を意識し、いきなりトレーニング（Knowledge）から始めず「なぜ変えるのか（Awareness/Desire）」の合意から作る。",
+      "変革への抵抗（Resistance）は悪ではなく自然な反応と捉え、対話・関与・心理的安全性の確保で乗り越える。"
+    ],
+    "approach_diff": {
+      "predictive": "リリース・移行フェーズに向けて組織変革管理（OCM）計画を策定し、段階的なトレーニング・パイロット導入・移行支援を行う。",
+      "agile_hybrid": "早期から現場ユーザーをスプリントレビューやパイロットテストに巻き込み、小さな変化を段階的に導入することで抵抗を最小化する。"
+    },
+    "related_tools": [
+      "ADKAR Model（ADKARモデル）",
+      "Kotter's 8-Step Change Model（コッターの変革8段階モデル）",
+      "Organizational Change Readiness Assessment（組織変革準備度評価）",
+      "Training & Rollout Plan（トレーニング・展開計画）"
+    ]
+  },
+  {
+    "id": "BE-8",
+    "domain": "Business Environment",
+    "title_en": "Incorporate continuous improvement",
+    "title_ja": "継続的改善の組み込み",
+    "summary": "プロジェクトのプロセス・品質・チーム協働・価値提供の仕組みを継続的に見直し、小さな改善サイクル（PDCA、レトロスペクティブ、Kaizen等）を組み込むことで、組織全体の能力と成果を継続的に向上させる。",
+    "enablers": [
+      "継続的改善プロセス（PDCA、Kaizen、Retrospective）をプロジェクトの標準リズムに組み込む（Embed Improvement Cycles / 改善サイクルの組み込み）",
+      "メトリクスやフィードバックを分析し、ボトルネックや無駄（Waste）を特定する（Identify Bottlenecks & Waste / ボトルネックと無駄の特定）",
+      "改善アクションの実験・評価を行い、有効なプラクティスを標準化・横展開する（Experiment & Standardize / 改善の実験と標準化）",
+      "心理的安全性を保ち、失敗から学ぶ文化（Blameless Postmortem / 非難なき振り返り）を醸成する（Foster Learning Culture / 学習文化の醸成）"
+    ],
+    "key_points": [
+      "改善はプロジェクト完了時の一回限りではなく、ライフサイクル全体を通じて反復的に行う。",
+      "Retrospective（レトロスペクティブ）で挙がった改善点は、単なる話し合いで終わらせず、オーナーを決めて次のイテレーション/フェーズのバックログや計画に組み込み、効果を検証する。",
+      "AIや自動化ツールの導入による業務効率化も継続的改善の重要な手段。"
+    ],
+    "approach_diff": {
+      "predictive": "フェーズゲートごとのLessons Learned Review（教訓レビュー）、品質監査、PDCAサイクル、プロセス改善計画を通じて改善を実施する。",
+      "agile_hybrid": "毎スプリント末のSprint Retrospective（スプリント・レトロスペクティブ）で「Keep/Problem/Try」等を議論し、直後のスプリントから即座に改善アクションを試行する。"
+    },
+    "related_tools": [
+      "Sprint Retrospective（スプリント・レトロスペクティブ）",
+      "PDCA Cycle (Plan-Do-Check-Act)（PDCAサイクル）",
+      "Kaizen / Continuous Improvement（カイゼン / 継続的改善）",
+      "Lessons Learned Register（教訓登録簿）"
+    ]
+  }
+]
