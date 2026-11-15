@@ -718,5 +718,145 @@ window.PMP_TOOLS = [
     "overview": "プロジェクトの計画・実行に影響を与える2大背景要素。EEF（組織体の環境要因）はプロジェクトチームが直接コントロールできない外部・内部の制約や条件（市場、法規制、組織文化、既存インフラ）。OPA（組織のプロセス資産）は組織が蓄積した再利用可能な資産（標準手順、テンプレート、過去データ、教訓リポジトリ）。",
     "formula": null,
     "exam_tip": "見分け方の鉄則：EEFはプロジェクトの結果として「更新されない」（そのまま制約として受け入れる）。OPAはプロジェクトを通じて「更新・蓄積される」（教訓やテンプレートをプロジェクト終了時に組織へ還元する）。"
+  },
+  {
+    "id": "T-73",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Product Vision & Project Management Plan",
+    "name_ja": "プロダクトビジョンとプロジェクトマネジメント計画書",
+    "type": "計画書・文書",
+    "overview": "プロダクトビジョンはプロジェクトが目指す最終価値・方向性を簡潔に示す北極星。プロジェクトマネジメント計画書（PMP）はスコープ・スケジュール・コスト・品質・資源・コミュニケーション・リスク・調達等の各補助計画書とベースラインを統合した実行・監視・終結の基準文書。",
+    "formula": "",
+    "exam_tip": "PMP（計画書）は実行しながら段階的詳細化（Progressive Elaboration）で更新され、ベースライン変更には統合変更管理（CCB等）の承認が必要。"
+  },
+  {
+    "id": "T-74",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Tailoring & Phase Gate (Stage-Gate) Review",
+    "name_ja": "テーラリングとフェーズゲートレビュー",
+    "type": "ツール・技法",
+    "overview": "テーラリングは組織標準や開発アプローチ（予測型・アジャイル・ハイブリッド）をプロジェクトの複雑性・規模・環境に合わせて最適化すること。フェーズゲート（ステージゲート）は各フェーズ終了時にガバナンス上の継続・中止・修正判断を行う関門。",
+    "formula": "",
+    "exam_tip": "標準プロセスを盲目的に適用せず、テーラリングで過不足を調整するのがPMの責務。"
+  },
+  {
+    "id": "T-75",
+    "category": "立ち上げ・ガバナンス・戦略成果物",
+    "name_en": "Communications & Stakeholder Engagement Plan",
+    "name_ja": "コミュニケーション計画書とステークホルダー・エンゲージメント計画書",
+    "type": "計画書・文書",
+    "overview": "コミュニケーション計画書は「誰に・何を・いつ・どのチャネル（Push/Pull/Interactive）で共有するか」を定義。エンゲージメント計画書はステークホルダーの現在と目標の関与度（SEAM）のギャップを埋めるための関与戦略を定義する。",
+    "formula": "",
+    "exam_tip": "情報共有の手順・頻度・フォーマットの問題はコミュニケーション計画書、関係者の抵抗・巻き込み不足はエンゲージメント計画書を確認する。"
+  },
+  {
+    "id": "T-76",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "MoSCoW & WSJF Prioritization",
+    "name_ja": "MoSCoW優先順位付けとWSJF（加重最短ジョブ優先）",
+    "type": "ツール・技法",
+    "overview": "MoSCoWは要件をMust/Should/Could/Won'tの4段階で分類する技法。WSJF（Weighted Shortest Job First）はSAFe等で用いられ、遅延コスト（Cost of Delay）をジョブ規模（Duration/Size）で割って高い順に優先実装する手法。",
+    "formula": "WSJF = Cost of Delay (遅延コスト) / Job Duration or Size (作業規模)",
+    "exam_tip": "価値ベース・デリバリーでは、開発しやすさではなく「ビジネス価値／遅延コスト」と規模の比率でバックログを並べ替える。"
+  },
+  {
+    "id": "T-77",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "MVP (Minimum Viable Product) & MMF (Minimum Marketable Feature)",
+    "name_ja": "実用最小限の製品（MVP）と最小市場価値機能（MMF）",
+    "type": "フレームワーク",
+    "overview": "MVPは仮説検証・顧客学習のために最小限のコストで作る実験的リリース単位。MMF（Minimum Marketable Feature）は実際に顧客へ提供してビジネス価値や収益を生む最小の機能単位。",
+    "formula": "",
+    "exam_tip": "不確実性が高い場合はMVPで早期に学習・ピボット判断し、段階的リリースにはMMF/MBI（Minimum Business Increment）を用いる。"
+  },
+  {
+    "id": "T-78",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Resource Breakdown Structure (RBS) & Resource Histogram",
+    "name_ja": "資源ブレークダウンストラクチャと資源ヒストグラム",
+    "type": "ツール・技法",
+    "overview": "資源RBSはプロジェクトに必要な人的・物的資源をカテゴリ・種別ごとに階層分解した図。資源ヒストグラムは期間ごとの必要資源量（稼働時間・人数）を棒グラフで可視化し、過負荷（オーバーアロケーション）を発見する。",
+    "formula": "",
+    "exam_tip": "リスクのRBS（Risk Breakdown Structure）と混同しないこと。資源ヒストグラムで山積み過負荷を見たら平準化/平滑化を検討する。"
+  },
+  {
+    "id": "T-79",
+    "category": "スコープ・スケジュール・アジャイル管理簿/ツール",
+    "name_en": "Information Radiator & Status Report",
+    "name_ja": "情報ラジエーターと状況報告書",
+    "type": "ツール・技法",
+    "overview": "情報ラジエーターはカンバンボードやバーンダウンチャートなど、チームや関係者がいつでも一目で進捗・障害を把握できる「見える化」ボード。状況報告書（Status Report）は現時点の進捗・実績・課題を定例報告する文書。",
+    "formula": "",
+    "exam_tip": "アジャイルではメール報告よりも情報ラジエーターによる透明性（Pull型コミュニケーション）が推奨される。"
+  },
+  {
+    "id": "T-80",
+    "category": "財務・EVM・投資評価",
+    "name_en": "Funding Limit Reconciliation & Variance Analysis",
+    "name_ja": "資金調達制限調整と差異分析",
+    "type": "ツール・技法",
+    "overview": "資金調達制限調整は、プロジェクトの支出計画と組織の期間ごとの予算上限（キャッシュフロー制約）を突き合わせ、必要に応じて作業スケジュールを調整する技法。差異分析（Variance Analysis）は計画値（ベースライン）と実績値の乖離原因を特定する分析。",
+    "formula": "差異 (Variance) = 実績値 (Actual) - 計画値 (Planned) ※EVMでは CV = EV - AC, SV = EV - PV",
+    "exam_tip": "年度予算の上限に引っかかる問題が出たら「資金調達制限調整（Funding Limit Reconciliation）」を選ぶ。"
+  },
+  {
+    "id": "T-81",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Bidder Conference & Configuration Management",
+    "name_ja": "入札者会議と構成管理システム",
+    "type": "ツール・技法",
+    "overview": "入札者会議（Bidder Conference）は契約前に全候補ベンダーへ同じ説明・質疑応答を行い公平性を保つ場。構成管理システム（CMS）は成果物・仕様書・コード等のバージョンや変更履歴を一貫管理する仕組み。",
+    "formula": "",
+    "exam_tip": "特定のベンダーだけに個別回答するのは公平性違反。全ベンダーへ書面で一斉共有するのが鉄則。"
+  },
+  {
+    "id": "T-82",
+    "category": "品質・リスク・課題・変更・調達・終結",
+    "name_en": "Closure Checklist & Formal Acceptance",
+    "name_ja": "終結チェックリストと公式受入（サインオフ）",
+    "type": "計画書・文書",
+    "overview": "プロジェクトやフェーズを完了するための確認事項（成果物検収、契約終結、教訓記録、資源解放、財務精算）を網羅したチェックリストと、顧客/スポンサーによる公式受入書（Sign-off）。",
+    "formula": "",
+    "exam_tip": "プロジェクトが早期中止された場合でも、終結プロセス（記録・教訓・資源解放・公式通知）は必ず実施する。"
+  },
+  {
+    "id": "T-83",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Active Listening & Facilitation",
+    "name_ja": "傾聴（アクティブリスニング）とファシリテーション",
+    "type": "ツール・技法",
+    "overview": "傾聴は相手の言葉だけでなく感情・背景・非言語サインまで理解し、言い換えや確認で共感を示すコミュニケーション技法。ファシリテーションは中立的な立場で会議の合意形成や課題解決を導く技法。",
+    "formula": "",
+    "exam_tip": "対立や誤解が起きたとき、PMはまず「傾聴し根本原因を探る」行動を優先する。"
+  },
+  {
+    "id": "T-84",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "Sprint Retrospective & Community of Practice (CoP)",
+    "name_ja": "スプリント・レトロスペクティブと実践コミュニティ（CoP）",
+    "type": "ツール・技法",
+    "overview": "レトロスペクティブは各イテレーション終了時にチームがプロセス・協働・ツールを振り返り継続的改善（カイゼン）を決める場。実践コミュニティ（CoP）はプロジェクトを横断して専門知識や暗黙知を共有する社内コミュニティ。",
+    "formula": "",
+    "exam_tip": "レトロスペクティブでは「責任追及」ではなく心理的安全性を保って次の改善アクションを1〜2個決める。"
+  },
+  {
+    "id": "T-85",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "PMI Code of Ethics & Compliance Management",
+    "name_ja": "PMI倫理・職務規定とコンプライアンス管理（登録簿/監査）",
+    "type": "フレームワーク",
+    "overview": "PMIの4つの価値観（責任・敬意・公正・誠実）に基づく倫理行動基準と、法令・規制・業界標準・社内規定への適合状況を追跡するコンプライアンス登録簿および品質/コンプライアンス監査。",
+    "formula": "",
+    "exam_tip": "利益相反、贈収賄、データ改ざん、ライセンス違反の圧力を受けた場合、PMは絶対に妥協せず規定・エスカレーション手順に従う。"
+  },
+  {
+    "id": "T-86",
+    "category": "リーダーシップ・コンフリクト・変革・2026新傾向",
+    "name_en": "PESTLE, SWOT & OKR",
+    "name_ja": "PESTLE分析・SWOT分析・OKR（目標と主要な結果）",
+    "type": "フレームワーク",
+    "overview": "PESTLEは外部環境（政治・経済・社会・技術・法規制・環境）を分析する枠組み。SWOTは内部の強み/弱みと外部の機会/脅威を整理する技法。OKRは野心的な目標（Objective）と測定可能な成果指標（Key Results）を連動させる目標管理手法。",
+    "formula": "",
+    "exam_tip": "2026年7月ECOではBusiness Environment（26%）が重視され、外部環境変化（PESTLE）と戦略的価値（OKR）の連動が頻出。"
   }
 ];

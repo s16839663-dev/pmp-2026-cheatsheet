@@ -4,12 +4,14 @@
   const QUIZ = window.PMP_QUIZ || [];
 
   const STORAGE_DONE = "pmp2026_done_ids_v1";
+  const STORAGE_HIDE_DONE = "pmp2026_hide_done_v1";
   let doneSet = new Set(JSON.parse(localStorage.getItem(STORAGE_DONE) || "[]"));
 
   let state = {
     tab: "eco",
     filter: "ALL",
     query: "",
+    hideDone: localStorage.getItem(STORAGE_HIDE_DONE) === "true",
     quizOrder: QUIZ.map((_, i) => i),
     quizAnswers: {} // questionId -> chosenIndex
   };
@@ -21,11 +23,102 @@
   const searchInput = $("#searchInput");
   const clearSearchBtn = $("#clearSearchBtn");
   const progressPill = $("#progressPill");
+  const toolModal = $("#toolModal");
+  const toolModalTitle = $("#toolModalTitle");
+  const toolModalBody = $("#toolModalBody");
+  const toolModalClose = $("#toolModalClose");
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   const norm = (s) => String(s ?? "").normalize("NFKC").toLowerCase();
+  const normKey = (s) => norm(s).replace(/[^a-z0-9\u3040-\u30ff\u4e00-\u9fff]/g, "");
+
+  // Explicit alias map for related_tools labels -> tool IDs
+  const TOOL_ALIAS = {
+    "productvision": ["T-73"],
+    "projectmanagementplan": ["T-73"],
+    "tailoring": ["T-74"],
+    "phasegatestagegatereview": ["T-74"],
+    "stakeholderengagementplan": ["T-75"],
+    "communicationsmanagementplan": ["T-75"],
+    "communicationmodels": ["T-75", "T-35"],
+    "moscowprioritization": ["T-76"],
+    "weightedshortestjobfirst": ["T-76"],
+    "minimumviableproduct": ["T-77"],
+    "resourcebreakdownstructure": ["T-78"],
+    "resourcehistogram": ["T-78"],
+    "informationradiator": ["T-79"],
+    "statusreport": ["T-79"],
+    "fundinglimitreconciliation": ["T-80"],
+    "varianceanalysis": ["T-80", "T-25"],
+    "bidderconference": ["T-81"],
+    "configurationmanagementsystem": ["T-81"],
+    "closurechecklist": ["T-82"],
+    "formalacceptance": ["T-82"],
+    "activelistening": ["T-83"],
+    "facilitation": ["T-83"],
+    "retrospective": ["T-84"],
+    "sprintretrospective": ["T-84"],
+    "communityofpractice": ["T-84"],
+    "pdcacycle": ["T-84"],
+    "kaizen": ["T-84"],
+    "knowledgemanagementtools": ["T-54", "T-84"],
+    "pmicodeofethics": ["T-85"],
+    "complianceregister": ["T-85"],
+    "qualitycomplianceaudit": ["T-67", "T-85"],
+    "pestleanalysis": ["T-86"],
+    "swotanalysis": ["T-86"],
+    "okr": ["T-86"],
+    "npvirrroibcr": ["T-30", "T-31", "T-32", "T-33"],
+    "powerinterestgrid": ["T-06"],
+    "saliencemodel": ["T-06"],
+    "thomaskilmannconflictmodes": ["T-56"],
+    "herzbergtwofactortheory": ["T-57"],
+    "changelog": ["T-51"],
+    "changerequest": ["T-51"],
+    "changecontrolboard": ["T-52"],
+    "integratedchangecontrol": ["T-52"],
+    "lessonslearnedregister": ["T-54"],
+    "finalreport": ["T-54"],
+    "wbs": ["T-11", "T-12"],
+    "earnedvaluemanagement": ["T-24", "T-25", "T-26", "T-27", "T-28", "T-29"],
+    "costbaselinereserves": ["T-69"],
+    "threepointestimating": ["T-37", "T-38"],
+    "resourceleveling": ["T-22"],
+    "makeorbuyanalysis": ["T-53"],
+    "procurementstatementofwork": ["T-53"],
+    "contracttypes": ["T-39"],
+    "controlchart": ["T-43"],
+    "burndownburnupchart": ["T-19"],
+    "cumulativeflowdiagram": ["T-20"],
+    "workperformancedata": ["T-70"],
+    "aidrivenanalytics": ["T-64"],
+    "enterpriseenvironmentalfactors": ["T-72"],
+    "organizationalchangereadinessassessment": ["T-60", "T-61"],
+    "trainingrolloutplan": ["T-60", "T-61"]
+  };
+
+  function resolveToolsForLabel(label) {
+    const rawEn = String(label).split("（")[0].trim();
+    const key = normKey(rawEn);
+    const keyFull = normKey(label);
+
+    // 1. Check alias prefix/substring match
+    for (const [alias, ids] of Object.entries(TOOL_ALIAS)) {
+      if (key.includes(alias) || keyFull.includes(alias)) {
+        return ids.map((id) => TOOLS.find((t) => t.id === id)).filter(Boolean);
+      }
+    }
+
+    // 2. Direct / substring match against name_en and name_ja
+    const matches = TOOLS.filter((t) => {
+      const en = normKey(t.name_en);
+      const ja = normKey(t.name_ja);
+      return (en && (en.includes(key) || key.includes(en))) || (ja && (ja.includes(keyFull) || keyFull.includes(ja)));
+    });
+    return matches;
+  }
 
   function highlight(text, words) {
     const safe = esc(text);
@@ -37,6 +130,12 @@
   function saveDone() {
     localStorage.setItem(STORAGE_DONE, JSON.stringify([...doneSet]));
     updateProgressPill();
+  }
+
+  function toggleHideDone() {
+    state.hideDone = !state.hideDone;
+    localStorage.setItem(STORAGE_HIDE_DONE, String(state.hideDone));
+    render();
   }
 
   function updateProgressPill() {
@@ -80,6 +179,12 @@
       .join("");
   }
 
+  function hideDoneButtonHtml(hiddenCount) {
+    return `<button type="button" class="toggle-btn ${state.hideDone ? "active" : ""}" id="hideDoneToggle">${
+      state.hideDone ? `👁 済を非表示中 (${hiddenCount}件)` : "👁 済を非表示"
+    }</button>`;
+  }
+
   function renderEco(words) {
     const domains = [
       { value: "ALL", label: `すべて (${ECO.length})` },
@@ -89,10 +194,13 @@
     ];
     renderFilterChips(domains);
 
-    const list = ECO.filter(
+    const matched = ECO.filter(
       (t) => (state.filter === "ALL" || t.domain === state.filter) && matchesQuery(t, words)
     );
-    statsBar.innerHTML = `<span>表示中: ${list.length} / ${ECO.length} タスク</span>`;
+    const hiddenCount = matched.filter((t) => doneSet.has(t.id)).length;
+    const list = state.hideDone ? matched.filter((t) => !doneSet.has(t.id)) : matched;
+
+    statsBar.innerHTML = `<span>表示中: ${list.length} / ${ECO.length} タスク</span>${hideDoneButtonHtml(hiddenCount)}`;
 
     if (!list.length) {
       contentArea.innerHTML = `<p>該当するタスクが見つかりませんでした。</p>`;
@@ -106,7 +214,15 @@
           const isDone = doneSet.has(t.id);
           const enablers = (t.enablers || []).map((e) => `<li>${highlight(e, words)}</li>`).join("");
           const points = (t.key_points || []).map((p) => `<li>${highlight(p, words)}</li>`).join("");
-          const tools = (t.related_tools || []).map((r) => `<span class="tag">${highlight(r, words)}</span>`).join("");
+          const tools = (t.related_tools || [])
+            .map(
+              (r) =>
+                `<button type="button" class="tag tag-btn" data-tool-label="${esc(r)}" title="タップして詳細を表示">${highlight(
+                  r,
+                  words
+                )}</button>`
+            )
+            .join("");
           const pred = t.approach_diff?.predictive || "";
           const agile = t.approach_diff?.agile_hybrid || "";
           return `
@@ -141,7 +257,7 @@
                 </div>
                 ${
                   tools
-                    ? `<div class="detail-section"><h4>関連ツール・成果物</h4><div class="tag-list">${tools}</div></div>`
+                    ? `<div class="detail-section"><h4>関連ツール・成果物（タップで詳細）</h4><div class="tag-list">${tools}</div></div>`
                     : ""
                 }
               </details>
@@ -150,6 +266,30 @@
         })
         .join("") +
       `</div>`;
+  }
+
+  function renderToolCardHtml(t, words, extraClass = "card") {
+    const isDone = doneSet.has(t.id);
+    const hasFormula = t.formula && String(t.formula).trim() !== "";
+    return `
+      <article class="${extraClass} ${hasFormula ? "formula-card" : ""}">
+        <div class="card-head">
+          <div>
+            <div class="badge-row">
+              <span class="badge">${esc(t.id)} · ${esc(t.type)}</span>
+              <span class="badge">${esc(t.category)}</span>
+              ${hasFormula ? `<span class="badge formula">計算式あり</span>` : ""}
+            </div>
+            <h2 class="card-title-ja">${highlight(t.name_ja, words)}</h2>
+            <p class="card-title-en">${highlight(t.name_en, words)}</p>
+          </div>
+          <button class="done-btn ${isDone ? "checked" : ""}" data-done="${esc(t.id)}">${isDone ? "✅ 済" : "☐ 未"}</button>
+        </div>
+        <p class="card-summary">${highlight(t.overview, words)}</p>
+        ${hasFormula ? `<div class="formula-box">${highlight(t.formula, words)}</div>` : ""}
+        ${t.exam_tip ? `<div class="tip-box"><strong>試験Tip:</strong> ${highlight(t.exam_tip, words)}</div>` : ""}
+      </article>
+    `;
   }
 
   function renderTools(words, onlyFormulas = false) {
@@ -162,44 +302,20 @@
       }))
     );
 
-    const list = base.filter(
+    const matched = base.filter(
       (t) => (state.filter === "ALL" || t.category === state.filter) && matchesQuery(t, words)
     );
-    statsBar.innerHTML = `<span>表示中: ${list.length} / ${base.length} 件</span>`;
+    const hiddenCount = matched.filter((t) => doneSet.has(t.id)).length;
+    const list = state.hideDone ? matched.filter((t) => !doneSet.has(t.id)) : matched;
+
+    statsBar.innerHTML = `<span>表示中: ${list.length} / ${base.length} 件</span>${hideDoneButtonHtml(hiddenCount)}`;
 
     if (!list.length) {
       contentArea.innerHTML = `<p>該当する項目が見つかりませんでした。</p>`;
       return;
     }
 
-    contentArea.innerHTML =
-      `<div class="cards-grid">` +
-      list
-        .map((t) => {
-          const isDone = doneSet.has(t.id);
-          const hasFormula = t.formula && String(t.formula).trim() !== "";
-          return `
-            <article class="card ${hasFormula ? "formula-card" : ""}">
-              <div class="card-head">
-                <div>
-                  <div class="badge-row">
-                    <span class="badge">${esc(t.id)} · ${esc(t.type)}</span>
-                    <span class="badge">${esc(t.category)}</span>
-                    ${hasFormula ? `<span class="badge formula">計算式あり</span>` : ""}
-                  </div>
-                  <h2 class="card-title-ja">${highlight(t.name_ja, words)}</h2>
-                  <p class="card-title-en">${highlight(t.name_en, words)}</p>
-                </div>
-                <button class="done-btn ${isDone ? "checked" : ""}" data-done="${esc(t.id)}">${isDone ? "✅ 済" : "☐ 未"}</button>
-              </div>
-              <p class="card-summary">${highlight(t.overview, words)}</p>
-              ${hasFormula ? `<div class="formula-box">${highlight(t.formula, words)}</div>` : ""}
-              ${t.exam_tip ? `<div class="tip-box"><strong>試験Tip:</strong> ${highlight(t.exam_tip, words)}</div>` : ""}
-            </article>
-          `;
-        })
-        .join("") +
-      `</div>`;
+    contentArea.innerHTML = `<div class="cards-grid">` + list.map((t) => renderToolCardHtml(t, words)).join("") + `</div>`;
   }
 
   function renderQuiz(words) {
@@ -277,6 +393,27 @@
     contentArea.innerHTML = html;
   }
 
+  let activeModalLabel = null;
+
+  function openToolModal(label) {
+    activeModalLabel = label;
+    const matches = resolveToolsForLabel(label);
+    toolModalTitle.textContent = label;
+    if (matches.length) {
+      toolModalBody.innerHTML = matches.map((t) => renderToolCardHtml(t, [], "modal-tool-card")).join("");
+    } else {
+      toolModalBody.innerHTML = `<p>該当するツール・管理簿の詳細が見つかりませんでした。</p>`;
+    }
+    toolModal.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeToolModal() {
+    activeModalLabel = null;
+    toolModal.hidden = true;
+    document.body.style.overflow = "";
+  }
+
   function render() {
     const words = getWords();
     clearSearchBtn.hidden = searchInput.value === "";
@@ -299,7 +436,19 @@
     render();
   });
 
+  statsBar.addEventListener("click", (e) => {
+    if (e.target.closest("#hideDoneToggle")) {
+      toggleHideDone();
+    }
+  });
+
   contentArea.addEventListener("click", (e) => {
+    const toolTag = e.target.closest("[data-tool-label]");
+    if (toolTag) {
+      openToolModal(toolTag.dataset.toolLabel);
+      return;
+    }
+
     const doneBtn = e.target.closest("[data-done]");
     if (doneBtn) {
       const id = doneBtn.dataset.done;
@@ -328,6 +477,25 @@
     }
   });
 
+  toolModalBody.addEventListener("click", (e) => {
+    const doneBtn = e.target.closest("[data-done]");
+    if (!doneBtn) return;
+    const id = doneBtn.dataset.done;
+    if (doneSet.has(id)) doneSet.delete(id);
+    else doneSet.add(id);
+    saveDone();
+    if (activeModalLabel) openToolModal(activeModalLabel);
+    render();
+  });
+
+  toolModalClose.addEventListener("click", closeToolModal);
+  toolModal.addEventListener("click", (e) => {
+    if (e.target === toolModal) closeToolModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !toolModal.hidden) closeToolModal();
+  });
+
   searchInput.addEventListener("input", render);
   clearSearchBtn.addEventListener("click", () => {
     searchInput.value = "";
@@ -337,4 +505,3 @@
 
   render();
 })();
-
